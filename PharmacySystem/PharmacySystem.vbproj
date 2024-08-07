@@ -77,6 +77,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormCategoriesList.Designer.vb">
+      <DependentUpon>FormCategoriesList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormCategoriesList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCategoryEntry.Designer.vb">
+      <DependentUpon>FormCategoryEntry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormCategoryEntry.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="LandingPage.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +113,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FormCategoriesList.resx">
+      <DependentUpon>FormCategoriesList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCategoryEntry.resx">
+      <DependentUpon>FormCategoryEntry.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LandingPage.resx">
       <DependentUpon>LandingPage.vb</DependentUpon>
     </EmbeddedResource>
@@ -128,6 +146,54 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\increaseWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\package.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\package %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\options-lines.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\options-lines %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business-report %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business-report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\group %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closed-padlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closed-padlock %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
