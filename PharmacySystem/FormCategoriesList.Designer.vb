@@ -32,7 +32,7 @@ Partial Class FormCategoriesList
         Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.btnAddCat = New Guna.UI.WinForms.GunaAdvenceButton()
-        Me.GunaAdvenceButton1 = New Guna.UI.WinForms.GunaAdvenceButton()
+        Me.btnRefresh = New Guna.UI.WinForms.GunaAdvenceButton()
         Me.Panel1.SuspendLayout()
         CType(Me.gunaGridCategories, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -70,13 +70,12 @@ Partial Class FormCategoriesList
         Me.gunaGridCategories.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.gunaGridCategories.BackgroundColor = System.Drawing.Color.White
         Me.gunaGridCategories.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.gunaGridCategories.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
-        Me.gunaGridCategories.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.gunaGridCategories.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(180, Byte), Integer), CType(CType(195, Byte), Integer))
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(180, Byte), Integer), CType(CType(195, Byte), Integer))
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.gunaGridCategories.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
@@ -86,8 +85,8 @@ Partial Class FormCategoriesList
         DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
         DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Gray
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White
         DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.gunaGridCategories.DefaultCellStyle = DataGridViewCellStyle3
         Me.gunaGridCategories.Dock = System.Windows.Forms.DockStyle.Bottom
@@ -95,6 +94,7 @@ Partial Class FormCategoriesList
         Me.gunaGridCategories.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.gunaGridCategories.Location = New System.Drawing.Point(0, 144)
         Me.gunaGridCategories.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.gunaGridCategories.MultiSelect = False
         Me.gunaGridCategories.Name = "gunaGridCategories"
         Me.gunaGridCategories.ReadOnly = True
         Me.gunaGridCategories.RowHeadersVisible = False
@@ -110,19 +110,19 @@ Partial Class FormCategoriesList
         Me.gunaGridCategories.ThemeStyle.BackColor = System.Drawing.Color.White
         Me.gunaGridCategories.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.gunaGridCategories.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(180, Byte), Integer), CType(CType(195, Byte), Integer))
-        Me.gunaGridCategories.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.gunaGridCategories.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
         Me.gunaGridCategories.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gunaGridCategories.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.Black
         Me.gunaGridCategories.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
         Me.gunaGridCategories.ThemeStyle.HeaderStyle.Height = 27
         Me.gunaGridCategories.ThemeStyle.ReadOnly = True
         Me.gunaGridCategories.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White
-        Me.gunaGridCategories.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
+        Me.gunaGridCategories.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.[Single]
         Me.gunaGridCategories.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gunaGridCategories.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black
         Me.gunaGridCategories.ThemeStyle.RowsStyle.Height = 22
-        Me.gunaGridCategories.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.SystemColors.Control
-        Me.gunaGridCategories.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black
+        Me.gunaGridCategories.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.Gray
+        Me.gunaGridCategories.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White
         '
         'Column1
         '
@@ -183,37 +183,37 @@ Partial Class FormCategoriesList
         Me.btnAddCat.Text = "Add Category"
         Me.btnAddCat.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'GunaAdvenceButton1
+        'btnRefresh
         '
-        Me.GunaAdvenceButton1.AnimationHoverSpeed = 0.07!
-        Me.GunaAdvenceButton1.AnimationSpeed = 0.03!
-        Me.GunaAdvenceButton1.BaseColor = System.Drawing.Color.LightSlateGray
-        Me.GunaAdvenceButton1.BorderColor = System.Drawing.Color.LightSlateGray
-        Me.GunaAdvenceButton1.CheckedBaseColor = System.Drawing.Color.Gray
-        Me.GunaAdvenceButton1.CheckedBorderColor = System.Drawing.Color.Gray
-        Me.GunaAdvenceButton1.CheckedForeColor = System.Drawing.Color.White
-        Me.GunaAdvenceButton1.CheckedImage = Nothing
-        Me.GunaAdvenceButton1.CheckedLineColor = System.Drawing.Color.Gray
-        Me.GunaAdvenceButton1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.GunaAdvenceButton1.DialogResult = System.Windows.Forms.DialogResult.None
-        Me.GunaAdvenceButton1.FocusedColor = System.Drawing.Color.Empty
-        Me.GunaAdvenceButton1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GunaAdvenceButton1.ForeColor = System.Drawing.Color.White
-        Me.GunaAdvenceButton1.Image = Nothing
-        Me.GunaAdvenceButton1.ImageSize = New System.Drawing.Size(20, 20)
-        Me.GunaAdvenceButton1.LineColor = System.Drawing.Color.DarkGray
-        Me.GunaAdvenceButton1.Location = New System.Drawing.Point(1381, 81)
-        Me.GunaAdvenceButton1.Name = "GunaAdvenceButton1"
-        Me.GunaAdvenceButton1.OnHoverBaseColor = System.Drawing.Color.DarkGray
-        Me.GunaAdvenceButton1.OnHoverBorderColor = System.Drawing.Color.DarkGray
-        Me.GunaAdvenceButton1.OnHoverForeColor = System.Drawing.Color.White
-        Me.GunaAdvenceButton1.OnHoverImage = Nothing
-        Me.GunaAdvenceButton1.OnHoverLineColor = System.Drawing.Color.DarkGray
-        Me.GunaAdvenceButton1.OnPressedColor = System.Drawing.Color.DarkGray
-        Me.GunaAdvenceButton1.Size = New System.Drawing.Size(170, 55)
-        Me.GunaAdvenceButton1.TabIndex = 3
-        Me.GunaAdvenceButton1.Text = "Refresh"
-        Me.GunaAdvenceButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.btnRefresh.AnimationHoverSpeed = 0.07!
+        Me.btnRefresh.AnimationSpeed = 0.03!
+        Me.btnRefresh.BaseColor = System.Drawing.Color.LightSlateGray
+        Me.btnRefresh.BorderColor = System.Drawing.Color.LightSlateGray
+        Me.btnRefresh.CheckedBaseColor = System.Drawing.Color.Gray
+        Me.btnRefresh.CheckedBorderColor = System.Drawing.Color.Gray
+        Me.btnRefresh.CheckedForeColor = System.Drawing.Color.White
+        Me.btnRefresh.CheckedImage = Nothing
+        Me.btnRefresh.CheckedLineColor = System.Drawing.Color.Gray
+        Me.btnRefresh.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnRefresh.DialogResult = System.Windows.Forms.DialogResult.None
+        Me.btnRefresh.FocusedColor = System.Drawing.Color.Empty
+        Me.btnRefresh.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRefresh.ForeColor = System.Drawing.Color.White
+        Me.btnRefresh.Image = Nothing
+        Me.btnRefresh.ImageSize = New System.Drawing.Size(20, 20)
+        Me.btnRefresh.LineColor = System.Drawing.Color.DarkGray
+        Me.btnRefresh.Location = New System.Drawing.Point(1381, 81)
+        Me.btnRefresh.Name = "btnRefresh"
+        Me.btnRefresh.OnHoverBaseColor = System.Drawing.Color.DarkGray
+        Me.btnRefresh.OnHoverBorderColor = System.Drawing.Color.DarkGray
+        Me.btnRefresh.OnHoverForeColor = System.Drawing.Color.White
+        Me.btnRefresh.OnHoverImage = Nothing
+        Me.btnRefresh.OnHoverLineColor = System.Drawing.Color.DarkGray
+        Me.btnRefresh.OnPressedColor = System.Drawing.Color.DarkGray
+        Me.btnRefresh.Size = New System.Drawing.Size(170, 55)
+        Me.btnRefresh.TabIndex = 3
+        Me.btnRefresh.Text = "Refresh"
+        Me.btnRefresh.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'FormCategoriesList
         '
@@ -223,7 +223,7 @@ Partial Class FormCategoriesList
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1559, 1080)
         Me.ControlBox = False
-        Me.Controls.Add(Me.GunaAdvenceButton1)
+        Me.Controls.Add(Me.btnRefresh)
         Me.Controls.Add(Me.btnAddCat)
         Me.Controls.Add(Me.gunaGridCategories)
         Me.Controls.Add(Me.Panel1)
@@ -246,5 +246,5 @@ Partial Class FormCategoriesList
     Friend WithEvents Column2 As DataGridViewTextBoxColumn
     Friend WithEvents Column3 As DataGridViewTextBoxColumn
     Friend WithEvents btnAddCat As Guna.UI.WinForms.GunaAdvenceButton
-    Friend WithEvents GunaAdvenceButton1 As Guna.UI.WinForms.GunaAdvenceButton
+    Friend WithEvents btnRefresh As Guna.UI.WinForms.GunaAdvenceButton
 End Class
