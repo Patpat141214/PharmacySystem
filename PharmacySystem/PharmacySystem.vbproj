@@ -89,6 +89,12 @@
     <Compile Include="FormCategoryEntry.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormUpdateCategory.Designer.vb">
+      <DependentUpon>FormUpdateCategory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormUpdateCategory.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="LandingPage.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +125,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormCategoryEntry.resx">
       <DependentUpon>FormCategoryEntry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUpdateCategory.resx">
+      <DependentUpon>FormUpdateCategory.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LandingPage.resx">
       <DependentUpon>LandingPage.vb</DependentUpon>
@@ -195,6 +204,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\delete %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pencildatagrid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closedatagrid.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

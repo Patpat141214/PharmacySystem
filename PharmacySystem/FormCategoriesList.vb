@@ -24,4 +24,18 @@ Public Class FormCategoriesList
     Private Sub btnRefresh_Click(sender As Object, e As EventArgs) Handles btnRefresh.Click
         loadCategories()
     End Sub
+
+    Private Sub gunaGridCategories_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles gunaGridCategories.CellContentClick
+        Dim colname As String = gunaGridCategories.Columns(e.ColumnIndex).Name
+        Dim _id As String = gunaGridCategories.Rows(e.RowIndex).Cells(1).Value.ToString
+        Dim _cat As String = gunaGridCategories.Rows(e.RowIndex).Cells(2).Value.ToString
+        If colname = "Edit" Then
+            With FormUpdateCategory
+                .lblID.Text = _id
+                .txtCat.Text = _cat
+                .originalCategory = _cat
+                .ShowDialog()
+            End With
+        End If
+    End Sub
 End Class

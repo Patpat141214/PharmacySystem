@@ -22,8 +22,20 @@ Public Class FormCategoryEntry
                 txtCat.Focus()
                 Exit Sub
             End If
+
             If (MsgBox("Are you sure want to save this category?", vbYesNo + vbQuestion) = vbYes) Then
                 conn.Open()
+                Dim cm As New SqlCommand("SELECT COUNT (*) FROM tblCategory WHERE category = @cat", conn)
+                cm.Parameters.AddWithValue("@cat", txtCat.Text.Trim())
+                Dim count As Integer = CInt(cm.ExecuteScalar())
+
+                If count > 0 Then
+                    MessageBox.Show("This Category is already existing!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                    conn.Close()
+                    txtCat.Focus()
+                    Return
+                End If
+
                 cm = New SqlCommand("insert into tblCategory (category) values (@category)", conn)
                 cm.Parameters.AddWithValue("@category", txtCat.Text)
                 cm.ExecuteNonQuery()
@@ -35,7 +47,6 @@ Public Class FormCategoryEntry
                     .loadCategories()
                 End With
             End If
-            txtCat.Clear()
             txtCat.Focus()
         Catch ex As Exception
             conn.Close()
