@@ -256,7 +256,7 @@ Partial Class LandingPage
         Me.btnCategory.OnPressedColor = System.Drawing.Color.FromArgb(CType(CType(155, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(83, Byte), Integer))
         Me.btnCategory.Size = New System.Drawing.Size(334, 50)
         Me.btnCategory.TabIndex = 5
-        Me.btnCategory.Text = "Category"
+        Me.btnCategory.Text = "Maintenance"
         '
         'GunaAdvenceButton1
         '

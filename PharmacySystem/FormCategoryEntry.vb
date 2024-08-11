@@ -18,29 +18,29 @@ Public Class FormCategoryEntry
     Private Sub btnSaveCat_Click(sender As Object, e As EventArgs) Handles btnSaveCat.Click
         Try
             If String.IsNullOrEmpty(txtCat.Text) Then
-                MsgBox("Category cannot be empty. Please enter a category.", vbExclamation)
+                MsgBox("Classification cannot be empty. Please enter a Classification.", vbExclamation)
                 txtCat.Focus()
                 Exit Sub
             End If
 
-            If (MsgBox("Are you sure want to save this category?", vbYesNo + vbQuestion) = vbYes) Then
+            If (MsgBox("Are you sure want to save this classification?", vbYesNo + vbQuestion) = vbYes) Then
                 conn.Open()
-                Dim cm As New SqlCommand("SELECT COUNT (*) FROM tblCategory WHERE category = @cat", conn)
+                Dim cm As New SqlCommand("SELECT COUNT (*) FROM tblClassification WHERE classification = @cat", conn)
                 cm.Parameters.AddWithValue("@cat", txtCat.Text.Trim())
                 Dim count As Integer = CInt(cm.ExecuteScalar())
 
                 If count > 0 Then
-                    MessageBox.Show("This Category is already existing!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                    MessageBox.Show("This classification is already existing!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                     conn.Close()
                     txtCat.Focus()
                     Return
                 End If
 
-                cm = New SqlCommand("insert into tblCategory (category) values (@category)", conn)
+                cm = New SqlCommand("insert into tblClassification (classification) values (@category)", conn)
                 cm.Parameters.AddWithValue("@category", txtCat.Text)
                 cm.ExecuteNonQuery()
                 conn.Close()
-                MsgBox("Record has been sucessfully saved", vbInformation)
+                MsgBox("classification has been sucessfully saved", vbInformation)
                 txtCat.Clear()
                 txtCat.Focus()
                 With FormCategoriesList

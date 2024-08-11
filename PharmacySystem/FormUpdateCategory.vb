@@ -14,7 +14,7 @@ Public Class FormUpdateCategory
     Private Sub btnUpdateCat_Click(sender As Object, e As EventArgs) Handles btnUpdateCat.Click
         Try
             If String.IsNullOrEmpty(txtCat.Text) Then
-                MsgBox("Category cannot be empty. Please enter a category.", vbExclamation)
+                MsgBox("classification cannot be empty. Please enter a classification.", vbExclamation)
                 txtCat.Focus()
                 Exit Sub
             End If
@@ -23,14 +23,14 @@ Public Class FormUpdateCategory
                 txtCat.Focus()
                 Exit Sub
             End If
-            If (MsgBox("Are you sure you want to update this category?", vbYesNo + vbQuestion) = vbYes) Then
+            If (MsgBox("Are you sure you want to update this classification?", vbYesNo + vbQuestion) = vbYes) Then
                 conn.Open()
-                cm = New SqlCommand("update tblCategory set category = @cat where id = @id", conn)
+                cm = New SqlCommand("update tblClassification set classification = @cat where classid = @id", conn)
                 cm.Parameters.AddWithValue("@cat", txtCat.Text)
                 cm.Parameters.AddWithValue("@id", lblID.Text)
                 cm.ExecuteNonQuery()
                 conn.Close()
-                MsgBox("Category successfully updated!", vbInformation)
+                MsgBox("Classification successfully updated!", vbInformation)
                 Me.Dispose()
                 With FormCategoriesList
                     .loadCategories()

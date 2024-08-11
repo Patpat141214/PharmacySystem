@@ -80,12 +80,12 @@ Partial Class FormUpdateCategory
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(8, 8)
+        Me.Label1.Location = New System.Drawing.Point(6, 9)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(179, 30)
+        Me.Label1.Size = New System.Drawing.Size(219, 30)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Category Update"
+        Me.Label1.Text = "Classification Update"
         '
         'Label2
         '
@@ -94,9 +94,9 @@ Partial Class FormUpdateCategory
         Me.Label2.Location = New System.Drawing.Point(9, 58)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(73, 21)
+        Me.Label2.Size = New System.Drawing.Size(101, 21)
         Me.Label2.TabIndex = 9
-        Me.Label2.Text = "Category"
+        Me.Label2.Text = "Classification"
         '
         'btnClear
         '

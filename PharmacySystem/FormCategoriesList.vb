@@ -11,11 +11,11 @@ Public Class FormCategoriesList
         Dim i As Integer = 0
         gunaGridCategories.Rows.Clear()
         conn.Open()
-        cm = New SqlCommand("Select * from tblCategory", conn)
+        cm = New SqlCommand("Select * from tblClassification", conn)
         dr = cm.ExecuteReader
         While dr.Read
             i += 1
-            gunaGridCategories.Rows.Add(i, dr.Item("id").ToString(), dr.Item("category").ToString())
+            gunaGridCategories.Rows.Add(i, dr.Item("classid").ToString(), dr.Item("classification").ToString())
             gunaGridCategories.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells
         End While
         conn.Close()
@@ -38,13 +38,13 @@ Public Class FormCategoriesList
                 .ShowDialog()
             End With
         ElseIf colname = "Delete" Then
-            If (MsgBox("Are you sure you want to delete this category?", vbYesNo + vbQuestion) = vbYes) Then
+            If (MsgBox("Are you sure you want to delete this classification?", vbYesNo + vbQuestion) = vbYes) Then
                 conn.Open()
-                cm = New SqlCommand("delete from tblCategory where id = @id", conn)
+                cm = New SqlCommand("delete from tblClassification where classid = @id", conn)
                 cm.Parameters.AddWithValue("@id", _id)
                 cm.ExecuteNonQuery()
                 conn.Close()
-                MsgBox("Category successfully deleted!", vbInformation)
+                MsgBox("classification successfully deleted!", vbInformation)
                 loadCategories()
             End If
         End If

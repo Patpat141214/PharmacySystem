@@ -82,9 +82,9 @@ Partial Class FormCategoryEntry
         Me.Label1.Location = New System.Drawing.Point(8, 8)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(160, 30)
+        Me.Label1.Size = New System.Drawing.Size(200, 30)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Category Entry"
+        Me.Label1.Text = "Classification Entry"
         '
         'txtCat
         '
@@ -165,9 +165,9 @@ Partial Class FormCategoryEntry
         Me.Label2.Location = New System.Drawing.Point(8, 55)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(73, 21)
+        Me.Label2.Size = New System.Drawing.Size(101, 21)
         Me.Label2.TabIndex = 5
-        Me.Label2.Text = "Category"
+        Me.Label2.Text = "Classification"
         '
         'FormCategoryEntry
         '

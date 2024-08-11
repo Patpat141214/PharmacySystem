@@ -28,15 +28,15 @@ Partial Class FormCategoriesList
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.gunaGridCategories = New Guna.UI.WinForms.GunaDataGridView()
+        Me.btnAddCat = New Guna.UI.WinForms.GunaAdvenceButton()
+        Me.btnRefresh = New Guna.UI.WinForms.GunaAdvenceButton()
+        Me.DataGridViewImageColumn1 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.DataGridViewImageColumn2 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Edit = New System.Windows.Forms.DataGridViewImageColumn()
         Me.Delete = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.btnAddCat = New Guna.UI.WinForms.GunaAdvenceButton()
-        Me.btnRefresh = New Guna.UI.WinForms.GunaAdvenceButton()
-        Me.DataGridViewImageColumn1 = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.DataGridViewImageColumn2 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.Panel1.SuspendLayout()
         CType(Me.gunaGridCategories, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -59,9 +59,9 @@ Partial Class FormCategoriesList
         Me.Label1.Location = New System.Drawing.Point(8, 8)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(179, 45)
+        Me.Label1.Size = New System.Drawing.Size(276, 45)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Categories"
+        Me.Label1.Text = "Classification List"
         '
         'gunaGridCategories
         '
@@ -128,53 +128,6 @@ Partial Class FormCategoriesList
         Me.gunaGridCategories.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.Silver
         Me.gunaGridCategories.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White
         '
-        'Column1
-        '
-        Me.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.Column1.HeaderText = "#"
-        Me.Column1.Name = "Column1"
-        Me.Column1.ReadOnly = True
-        Me.Column1.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.Column1.Width = 43
-        '
-        'Column2
-        '
-        Me.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.Column2.HeaderText = "ID"
-        Me.Column2.Name = "Column2"
-        Me.Column2.ReadOnly = True
-        Me.Column2.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.Column2.Visible = False
-        Me.Column2.Width = 49
-        '
-        'Column3
-        '
-        Me.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.Column3.HeaderText = "CATEGORY"
-        Me.Column3.Name = "Column3"
-        Me.Column3.ReadOnly = True
-        Me.Column3.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
-        '
-        'Edit
-        '
-        Me.Edit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.Edit.HeaderText = ""
-        Me.Edit.Image = Global.PharmacySystem.My.Resources.Resources.pencildatagrid
-        Me.Edit.Name = "Edit"
-        Me.Edit.ReadOnly = True
-        Me.Edit.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.Edit.Width = 5
-        '
-        'Delete
-        '
-        Me.Delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.Delete.HeaderText = ""
-        Me.Delete.Image = Global.PharmacySystem.My.Resources.Resources.closedatagrid
-        Me.Delete.Name = "Delete"
-        Me.Delete.ReadOnly = True
-        Me.Delete.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.Delete.Width = 5
-        '
         'btnAddCat
         '
         Me.btnAddCat.AnimationHoverSpeed = 0.07!
@@ -194,7 +147,7 @@ Partial Class FormCategoriesList
         Me.btnAddCat.Image = Nothing
         Me.btnAddCat.ImageSize = New System.Drawing.Size(20, 20)
         Me.btnAddCat.LineColor = System.Drawing.Color.DarkGray
-        Me.btnAddCat.Location = New System.Drawing.Point(1196, 81)
+        Me.btnAddCat.Location = New System.Drawing.Point(1153, 81)
         Me.btnAddCat.Name = "btnAddCat"
         Me.btnAddCat.OnHoverBaseColor = System.Drawing.Color.DarkGray
         Me.btnAddCat.OnHoverBorderColor = System.Drawing.Color.DarkGray
@@ -202,9 +155,9 @@ Partial Class FormCategoriesList
         Me.btnAddCat.OnHoverImage = Nothing
         Me.btnAddCat.OnHoverLineColor = System.Drawing.Color.DarkGray
         Me.btnAddCat.OnPressedColor = System.Drawing.Color.DarkGray
-        Me.btnAddCat.Size = New System.Drawing.Size(170, 55)
+        Me.btnAddCat.Size = New System.Drawing.Size(213, 55)
         Me.btnAddCat.TabIndex = 2
-        Me.btnAddCat.Text = "Add Category"
+        Me.btnAddCat.Text = "Add Classification"
         Me.btnAddCat.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'btnRefresh
@@ -257,6 +210,53 @@ Partial Class FormCategoriesList
         Me.DataGridViewImageColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
         Me.DataGridViewImageColumn2.Width = 755
         '
+        'Column1
+        '
+        Me.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.Column1.HeaderText = "#"
+        Me.Column1.Name = "Column1"
+        Me.Column1.ReadOnly = True
+        Me.Column1.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.Column1.Width = 43
+        '
+        'Column2
+        '
+        Me.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.Column2.HeaderText = "ID"
+        Me.Column2.Name = "Column2"
+        Me.Column2.ReadOnly = True
+        Me.Column2.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.Column2.Visible = False
+        Me.Column2.Width = 49
+        '
+        'Column3
+        '
+        Me.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column3.HeaderText = "CLASSIFICATION"
+        Me.Column3.Name = "Column3"
+        Me.Column3.ReadOnly = True
+        Me.Column3.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        '
+        'Edit
+        '
+        Me.Edit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.Edit.HeaderText = ""
+        Me.Edit.Image = Global.PharmacySystem.My.Resources.Resources.pencildatagrid
+        Me.Edit.Name = "Edit"
+        Me.Edit.ReadOnly = True
+        Me.Edit.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.Edit.Width = 5
+        '
+        'Delete
+        '
+        Me.Delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.Delete.HeaderText = ""
+        Me.Delete.Image = Global.PharmacySystem.My.Resources.Resources.closedatagrid
+        Me.Delete.Name = "Delete"
+        Me.Delete.ReadOnly = True
+        Me.Delete.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.Delete.Width = 5
+        '
         'FormCategoriesList
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 21.0!)
@@ -286,11 +286,11 @@ Partial Class FormCategoriesList
     Friend WithEvents gunaGridCategories As Guna.UI.WinForms.GunaDataGridView
     Friend WithEvents btnAddCat As Guna.UI.WinForms.GunaAdvenceButton
     Friend WithEvents btnRefresh As Guna.UI.WinForms.GunaAdvenceButton
+    Friend WithEvents DataGridViewImageColumn1 As DataGridViewImageColumn
+    Friend WithEvents DataGridViewImageColumn2 As DataGridViewImageColumn
     Friend WithEvents Column1 As DataGridViewTextBoxColumn
     Friend WithEvents Column2 As DataGridViewTextBoxColumn
     Friend WithEvents Column3 As DataGridViewTextBoxColumn
     Friend WithEvents Edit As DataGridViewImageColumn
     Friend WithEvents Delete As DataGridViewImageColumn
-    Friend WithEvents DataGridViewImageColumn1 As DataGridViewImageColumn
-    Friend WithEvents DataGridViewImageColumn2 As DataGridViewImageColumn
 End Class
