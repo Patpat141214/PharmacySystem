@@ -53,4 +53,5 @@ Public Class FormCategoryEntry
             MsgBox(ex.Message, vbCritical)
         End Try
     End Sub
+
 End Class

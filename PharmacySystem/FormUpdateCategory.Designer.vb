@@ -127,7 +127,7 @@ Partial Class FormUpdateCategory
         Me.btnClear.OnPressedColor = System.Drawing.Color.DarkGray
         Me.btnClear.Size = New System.Drawing.Size(112, 41)
         Me.btnClear.TabIndex = 8
-        Me.btnClear.Text = "Clear"
+        Me.btnClear.Text = "Revert"
         Me.btnClear.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'btnUpdateCat
@@ -149,7 +149,7 @@ Partial Class FormUpdateCategory
         Me.btnUpdateCat.Image = Nothing
         Me.btnUpdateCat.ImageSize = New System.Drawing.Size(20, 20)
         Me.btnUpdateCat.LineColor = System.Drawing.Color.DarkGray
-        Me.btnUpdateCat.Location = New System.Drawing.Point(159, 123)
+        Me.btnUpdateCat.Location = New System.Drawing.Point(160, 123)
         Me.btnUpdateCat.Name = "btnUpdateCat"
         Me.btnUpdateCat.OnHoverBaseColor = System.Drawing.Color.DarkGray
         Me.btnUpdateCat.OnHoverBorderColor = System.Drawing.Color.DarkGray
