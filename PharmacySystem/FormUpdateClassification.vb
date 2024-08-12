@@ -1,6 +1,6 @@
 ﻿Imports System.Data.SqlClient
 
-Public Class FormUpdateCategory
+Public Class FormUpdateClassification
     Public originalCategory As String
     Private Sub btnCloseForm_Click(sender As Object, e As EventArgs) Handles btnCloseForm.Click
         Me.Dispose()
@@ -32,7 +32,7 @@ Public Class FormUpdateCategory
                 conn.Close()
                 MsgBox("Classification successfully updated!", vbInformation)
                 Me.Dispose()
-                With FormCategoriesList
+                With FormClassificationList
                     .loadCategories()
                 End With
             End If

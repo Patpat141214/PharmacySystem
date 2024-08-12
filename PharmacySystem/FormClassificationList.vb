@@ -1,8 +1,8 @@
 ﻿Imports System.Data.SqlClient
 
-Public Class FormCategoriesList
+Public Class FormClassificationList
     Private Sub btnAddCat_Click(sender As Object, e As EventArgs) Handles btnAddCat.Click
-        With FormCategoryEntry
+        With FormClassificationEntry
             .ShowDialog()
         End With
     End Sub
@@ -31,7 +31,7 @@ Public Class FormCategoriesList
         Dim _id As String = gunaGridCategories.Rows(e.RowIndex).Cells(1).Value.ToString
         Dim _cat As String = gunaGridCategories.Rows(e.RowIndex).Cells(2).Value.ToString
         If colname = "Edit" Then
-            With FormUpdateCategory
+            With FormUpdateClassification
                 .lblID.Text = _id
                 .txtCat.Text = _cat
                 .originalCategory = _cat
@@ -52,5 +52,9 @@ Public Class FormCategoriesList
 
     Private Sub FormCategoriesList_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         gunaGridCategories.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells
+    End Sub
+
+    Private Sub btnCloseForm_Click(sender As Object, e As EventArgs) Handles btnCloseForm.Click
+        Me.Dispose()
     End Sub
 End Class

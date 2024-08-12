@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class FormUpdateCategory
+Partial Class FormUpdateClassification
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -23,13 +23,13 @@ Partial Class FormUpdateCategory
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.btnCloseForm = New Guna.UI.WinForms.GunaAdvenceButton()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.btnClear = New Guna.UI.WinForms.GunaAdvenceButton()
         Me.btnUpdateCat = New Guna.UI.WinForms.GunaAdvenceButton()
         Me.txtCat = New System.Windows.Forms.TextBox()
         Me.lblID = New System.Windows.Forms.Label()
+        Me.btnCloseForm = New Guna.UI.WinForms.GunaAdvenceButton()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -44,37 +44,6 @@ Partial Class FormUpdateCategory
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(401, 49)
         Me.Panel1.TabIndex = 2
-        '
-        'btnCloseForm
-        '
-        Me.btnCloseForm.AnimationHoverSpeed = 0.07!
-        Me.btnCloseForm.AnimationSpeed = 0.03!
-        Me.btnCloseForm.BaseColor = System.Drawing.Color.Transparent
-        Me.btnCloseForm.BorderColor = System.Drawing.Color.Transparent
-        Me.btnCloseForm.CheckedBaseColor = System.Drawing.Color.Transparent
-        Me.btnCloseForm.CheckedBorderColor = System.Drawing.Color.Transparent
-        Me.btnCloseForm.CheckedForeColor = System.Drawing.Color.Transparent
-        Me.btnCloseForm.CheckedImage = Nothing
-        Me.btnCloseForm.CheckedLineColor = System.Drawing.Color.Transparent
-        Me.btnCloseForm.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnCloseForm.DialogResult = System.Windows.Forms.DialogResult.None
-        Me.btnCloseForm.FocusedColor = System.Drawing.Color.Empty
-        Me.btnCloseForm.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCloseForm.ForeColor = System.Drawing.Color.White
-        Me.btnCloseForm.Image = Global.PharmacySystem.My.Resources.Resources.delete
-        Me.btnCloseForm.ImageSize = New System.Drawing.Size(22, 22)
-        Me.btnCloseForm.LineColor = System.Drawing.Color.Transparent
-        Me.btnCloseForm.Location = New System.Drawing.Point(354, 5)
-        Me.btnCloseForm.Name = "btnCloseForm"
-        Me.btnCloseForm.OnHoverBaseColor = System.Drawing.Color.Transparent
-        Me.btnCloseForm.OnHoverBorderColor = System.Drawing.Color.Transparent
-        Me.btnCloseForm.OnHoverForeColor = System.Drawing.Color.Transparent
-        Me.btnCloseForm.OnHoverImage = Global.PharmacySystem.My.Resources.Resources.delete__1_
-        Me.btnCloseForm.OnHoverLineColor = System.Drawing.Color.Transparent
-        Me.btnCloseForm.OnPressedColor = System.Drawing.Color.Transparent
-        Me.btnCloseForm.Size = New System.Drawing.Size(41, 38)
-        Me.btnCloseForm.TabIndex = 3
-        Me.btnCloseForm.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label1
         '
@@ -181,10 +150,42 @@ Partial Class FormUpdateCategory
         Me.lblID.TabIndex = 10
         Me.lblID.Visible = False
         '
-        'FormUpdateCategory
+        'btnCloseForm
+        '
+        Me.btnCloseForm.AnimationHoverSpeed = 0.07!
+        Me.btnCloseForm.AnimationSpeed = 0.03!
+        Me.btnCloseForm.BaseColor = System.Drawing.Color.Transparent
+        Me.btnCloseForm.BorderColor = System.Drawing.Color.Transparent
+        Me.btnCloseForm.CheckedBaseColor = System.Drawing.Color.Transparent
+        Me.btnCloseForm.CheckedBorderColor = System.Drawing.Color.Transparent
+        Me.btnCloseForm.CheckedForeColor = System.Drawing.Color.Transparent
+        Me.btnCloseForm.CheckedImage = Nothing
+        Me.btnCloseForm.CheckedLineColor = System.Drawing.Color.Transparent
+        Me.btnCloseForm.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnCloseForm.DialogResult = System.Windows.Forms.DialogResult.None
+        Me.btnCloseForm.FocusedColor = System.Drawing.Color.Empty
+        Me.btnCloseForm.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCloseForm.ForeColor = System.Drawing.Color.White
+        Me.btnCloseForm.Image = Global.PharmacySystem.My.Resources.Resources.delete
+        Me.btnCloseForm.ImageSize = New System.Drawing.Size(22, 22)
+        Me.btnCloseForm.LineColor = System.Drawing.Color.Transparent
+        Me.btnCloseForm.Location = New System.Drawing.Point(354, 5)
+        Me.btnCloseForm.Name = "btnCloseForm"
+        Me.btnCloseForm.OnHoverBaseColor = System.Drawing.Color.Transparent
+        Me.btnCloseForm.OnHoverBorderColor = System.Drawing.Color.Transparent
+        Me.btnCloseForm.OnHoverForeColor = System.Drawing.Color.Transparent
+        Me.btnCloseForm.OnHoverImage = Global.PharmacySystem.My.Resources.Resources.delete__1_
+        Me.btnCloseForm.OnHoverLineColor = System.Drawing.Color.Transparent
+        Me.btnCloseForm.OnPressedColor = System.Drawing.Color.Transparent
+        Me.btnCloseForm.Size = New System.Drawing.Size(41, 38)
+        Me.btnCloseForm.TabIndex = 3
+        Me.btnCloseForm.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'FormUpdateClassification
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 21.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(401, 171)
         Me.ControlBox = False
         Me.Controls.Add(Me.lblID)
@@ -196,7 +197,7 @@ Partial Class FormUpdateCategory
         Me.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.Name = "FormUpdateCategory"
+        Me.Name = "FormUpdateClassification"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()

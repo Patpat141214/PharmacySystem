@@ -1,6 +1,6 @@
 ﻿Imports System.Data.SqlClient
 
-Public Class FormCategoryEntry
+Public Class FormClassificationEntry
 
     Private Sub btnCloseForm_Click(sender As Object, e As EventArgs) Handles btnCloseForm.Click
         Me.Dispose()
@@ -43,7 +43,7 @@ Public Class FormCategoryEntry
                 MsgBox("classification has been sucessfully saved", vbInformation)
                 txtCat.Clear()
                 txtCat.Focus()
-                With FormCategoriesList
+                With FormClassificationList
                     .loadCategories()
                 End With
             End If

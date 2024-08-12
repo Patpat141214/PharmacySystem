@@ -51,6 +51,15 @@
     <Reference Include="Guna.UI">
       <HintPath>E:\Guna.UI.dll</HintPath>
     </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -77,22 +86,28 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormCategoriesList.Designer.vb">
-      <DependentUpon>FormCategoriesList.vb</DependentUpon>
+    <Compile Include="FormClassificationList.Designer.vb">
+      <DependentUpon>FormClassificationList.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormCategoriesList.vb">
+    <Compile Include="FormClassificationList.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormCategoryEntry.Designer.vb">
-      <DependentUpon>FormCategoryEntry.vb</DependentUpon>
+    <Compile Include="FormClassificationEntry.Designer.vb">
+      <DependentUpon>FormClassificationEntry.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormCategoryEntry.vb">
+    <Compile Include="FormClassificationEntry.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormUpdateCategory.Designer.vb">
-      <DependentUpon>FormUpdateCategory.vb</DependentUpon>
+    <Compile Include="FormMaintenance.Designer.vb">
+      <DependentUpon>FormMaintenance.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormUpdateCategory.vb">
+    <Compile Include="FormMaintenance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUpdateClassification.Designer.vb">
+      <DependentUpon>FormUpdateClassification.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormUpdateClassification.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LandingPage.vb">
@@ -120,14 +135,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="FormCategoriesList.resx">
-      <DependentUpon>FormCategoriesList.vb</DependentUpon>
+    <EmbeddedResource Include="FormClassificationList.resx">
+      <DependentUpon>FormClassificationList.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormCategoryEntry.resx">
-      <DependentUpon>FormCategoryEntry.vb</DependentUpon>
+    <EmbeddedResource Include="FormClassificationEntry.resx">
+      <DependentUpon>FormClassificationEntry.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormUpdateCategory.resx">
-      <DependentUpon>FormUpdateCategory.vb</DependentUpon>
+    <EmbeddedResource Include="FormMaintenance.resx">
+      <DependentUpon>FormMaintenance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUpdateClassification.resx">
+      <DependentUpon>FormUpdateClassification.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LandingPage.resx">
       <DependentUpon>LandingPage.vb</DependentUpon>
@@ -152,6 +170,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
     <None Include="Resources\increase.png" />
   </ItemGroup>
   <ItemGroup>
