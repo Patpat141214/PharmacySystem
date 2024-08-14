@@ -26,14 +26,14 @@ Partial Class FormMaintenance
         Me.Label1 = New System.Windows.Forms.Label()
         Me.MetroTabControl1 = New MetroFramework.Controls.MetroTabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
-        Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.TabPage3 = New System.Windows.Forms.TabPage()
-        Me.TabPage4 = New System.Windows.Forms.TabPage()
-        Me.TabPage5 = New System.Windows.Forms.TabPage()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.TabPage4 = New System.Windows.Forms.TabPage()
         Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.TabPage5 = New System.Windows.Forms.TabPage()
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
         Me.MetroTabControl1.SuspendLayout()
@@ -91,6 +91,14 @@ Partial Class FormMaintenance
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Brand Name      "
         '
+        'Panel2
+        '
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel2.Location = New System.Drawing.Point(0, 0)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(1551, 970)
+        Me.Panel2.TabIndex = 0
+        '
         'TabPage2
         '
         Me.TabPage2.BackColor = System.Drawing.Color.White
@@ -100,6 +108,14 @@ Partial Class FormMaintenance
         Me.TabPage2.Size = New System.Drawing.Size(1551, 970)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Generic Name      "
+        '
+        'Panel3
+        '
+        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel3.Location = New System.Drawing.Point(0, 0)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(1551, 970)
+        Me.Panel3.TabIndex = 1
         '
         'TabPage3
         '
@@ -111,6 +127,14 @@ Partial Class FormMaintenance
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "Formulation      "
         '
+        'Panel4
+        '
+        Me.Panel4.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel4.Location = New System.Drawing.Point(0, 0)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(1551, 970)
+        Me.Panel4.TabIndex = 1
+        '
         'TabPage4
         '
         Me.TabPage4.BackColor = System.Drawing.Color.White
@@ -121,6 +145,14 @@ Partial Class FormMaintenance
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "Classification      "
         '
+        'Panel5
+        '
+        Me.Panel5.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel5.Location = New System.Drawing.Point(0, 0)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Size = New System.Drawing.Size(1551, 970)
+        Me.Panel5.TabIndex = 1
+        '
         'TabPage5
         '
         Me.TabPage5.BackColor = System.Drawing.Color.White
@@ -130,38 +162,6 @@ Partial Class FormMaintenance
         Me.TabPage5.Size = New System.Drawing.Size(1551, 970)
         Me.TabPage5.TabIndex = 4
         Me.TabPage5.Text = "Type"
-        '
-        'Panel2
-        '
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel2.Location = New System.Drawing.Point(0, 0)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1551, 970)
-        Me.Panel2.TabIndex = 0
-        '
-        'Panel3
-        '
-        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel3.Location = New System.Drawing.Point(0, 0)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1551, 970)
-        Me.Panel3.TabIndex = 1
-        '
-        'Panel4
-        '
-        Me.Panel4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel4.Location = New System.Drawing.Point(0, 0)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(1551, 970)
-        Me.Panel4.TabIndex = 1
-        '
-        'Panel5
-        '
-        Me.Panel5.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel5.Location = New System.Drawing.Point(0, 0)
-        Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(1551, 970)
-        Me.Panel5.TabIndex = 1
         '
         'Panel6
         '

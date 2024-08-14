@@ -86,6 +86,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormBrandEntry.Designer.vb">
+      <DependentUpon>FormBrandEntry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormBrandEntry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBrandList.Designer.vb">
+      <DependentUpon>FormBrandList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormBrandList.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormClassificationList.Designer.vb">
       <DependentUpon>FormClassificationList.vb</DependentUpon>
     </Compile>
@@ -102,6 +114,12 @@
       <DependentUpon>FormMaintenance.vb</DependentUpon>
     </Compile>
     <Compile Include="FormMaintenance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUpdateBrand.Designer.vb">
+      <DependentUpon>FormUpdateBrand.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormUpdateBrand.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormUpdateClassification.Designer.vb">
@@ -135,6 +153,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FormBrandEntry.resx">
+      <DependentUpon>FormBrandEntry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBrandList.resx">
+      <DependentUpon>FormBrandList.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormClassificationList.resx">
       <DependentUpon>FormClassificationList.vb</DependentUpon>
     </EmbeddedResource>
@@ -143,6 +167,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMaintenance.resx">
       <DependentUpon>FormMaintenance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUpdateBrand.resx">
+      <DependentUpon>FormUpdateBrand.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormUpdateClassification.resx">
       <DependentUpon>FormUpdateClassification.vb</DependentUpon>

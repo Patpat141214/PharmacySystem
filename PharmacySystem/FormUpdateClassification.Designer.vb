@@ -54,7 +54,7 @@ Partial Class FormUpdateClassification
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(219, 30)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Classification Update"
+        Me.Label1.Text = "Update Classification"
         '
         'Label2
         '

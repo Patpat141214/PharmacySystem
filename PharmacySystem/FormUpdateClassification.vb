@@ -36,7 +36,7 @@ Public Class FormUpdateClassification
                     .loadCategories()
                 End With
             End If
-
+            txtCat.Focus()
         Catch ex As Exception
             conn.Close()
             MsgBox(ex.Message, vbCritical)

@@ -8,6 +8,26 @@
                 .BringToFront()
                 .Show()
             End With
+
+        ElseIf MetroTabControl1.SelectedIndex = 0 Then
+            With FormBrandList
+                .TopLevel = False
+                Panel2.Controls.Add(FormBrandList)
+                .loadBrands()
+                .BringToFront()
+                .Show()
+            End With
         End If
+    End Sub
+
+    Private Sub FormMaintenance_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        MetroTabControl1.SelectedIndex = 0
+        With FormBrandList
+            .TopLevel = False
+            Panel2.Controls.Add(FormBrandList)
+            .loadBrands()
+            .BringToFront()
+            .Show()
+        End With
     End Sub
 End Class
