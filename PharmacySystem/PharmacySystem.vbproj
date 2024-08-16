@@ -110,6 +110,24 @@
     <Compile Include="FormClassificationEntry.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormGenericEntry.Designer.vb">
+      <DependentUpon>FormGenericEntry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormGenericEntry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGenericList.Designer.vb">
+      <DependentUpon>FormGenericList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormGenericList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGenericUpdate.Designer.vb">
+      <DependentUpon>FormGenericUpdate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormGenericUpdate.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormMaintenance.Designer.vb">
       <DependentUpon>FormMaintenance.vb</DependentUpon>
     </Compile>
@@ -164,6 +182,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormClassificationEntry.resx">
       <DependentUpon>FormClassificationEntry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGenericEntry.resx">
+      <DependentUpon>FormGenericEntry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGenericList.resx">
+      <DependentUpon>FormGenericList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGenericUpdate.resx">
+      <DependentUpon>FormGenericUpdate.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMaintenance.resx">
       <DependentUpon>FormMaintenance.vb</DependentUpon>

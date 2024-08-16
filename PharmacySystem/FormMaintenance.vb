@@ -17,6 +17,13 @@
                 .BringToFront()
                 .Show()
             End With
+        ElseIf MetroTabControl1.SelectedIndex = 1 Then
+            With FormGenericList
+                .TopLevel = False
+                Panel3.Controls.Add(FormGenericList)
+                .BringToFront()
+                .Show()
+            End With
         End If
     End Sub
 

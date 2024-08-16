@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class FormBrandList
+Partial Class FormGenericList
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -28,16 +28,16 @@ Partial Class FormBrandList
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnRefresh = New Guna.UI.WinForms.GunaAdvenceButton()
-        Me.btnAddBrand = New Guna.UI.WinForms.GunaAdvenceButton()
+        Me.btnAddGeneric = New Guna.UI.WinForms.GunaAdvenceButton()
         Me.gunaGridCategories = New Guna.UI.WinForms.GunaDataGridView()
-        Me.DataGridViewImageColumn1 = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.DataGridViewImageColumn2 = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.btnCloseForm = New Guna.UI.WinForms.GunaAdvenceButton()
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewImageColumn1 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.DataGridViewImageColumn2 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.Edit = New System.Windows.Forms.DataGridViewImageColumn()
         Me.Delete = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.btnCloseForm = New Guna.UI.WinForms.GunaAdvenceButton()
         Me.Panel1.SuspendLayout()
         CType(Me.gunaGridCategories, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -52,7 +52,7 @@ Partial Class FormBrandList
         Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1551, 49)
-        Me.Panel1.TabIndex = 1
+        Me.Panel1.TabIndex = 2
         '
         'Label1
         '
@@ -61,9 +61,9 @@ Partial Class FormBrandList
         Me.Label1.Location = New System.Drawing.Point(8, 8)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(128, 32)
+        Me.Label1.Size = New System.Drawing.Size(147, 32)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Brand List"
+        Me.Label1.Text = "Generic List"
         '
         'btnRefresh
         '
@@ -93,41 +93,41 @@ Partial Class FormBrandList
         Me.btnRefresh.OnHoverLineColor = System.Drawing.Color.DarkGray
         Me.btnRefresh.OnPressedColor = System.Drawing.Color.DarkGray
         Me.btnRefresh.Size = New System.Drawing.Size(170, 55)
-        Me.btnRefresh.TabIndex = 6
+        Me.btnRefresh.TabIndex = 9
         Me.btnRefresh.Text = "Refresh"
         Me.btnRefresh.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'btnAddBrand
+        'btnAddGeneric
         '
-        Me.btnAddBrand.AnimationHoverSpeed = 0.07!
-        Me.btnAddBrand.AnimationSpeed = 0.03!
-        Me.btnAddBrand.BaseColor = System.Drawing.Color.LightSlateGray
-        Me.btnAddBrand.BorderColor = System.Drawing.Color.LightSlateGray
-        Me.btnAddBrand.CheckedBaseColor = System.Drawing.Color.Gray
-        Me.btnAddBrand.CheckedBorderColor = System.Drawing.Color.Gray
-        Me.btnAddBrand.CheckedForeColor = System.Drawing.Color.White
-        Me.btnAddBrand.CheckedImage = Nothing
-        Me.btnAddBrand.CheckedLineColor = System.Drawing.Color.Gray
-        Me.btnAddBrand.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnAddBrand.DialogResult = System.Windows.Forms.DialogResult.None
-        Me.btnAddBrand.FocusedColor = System.Drawing.Color.Empty
-        Me.btnAddBrand.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAddBrand.ForeColor = System.Drawing.Color.White
-        Me.btnAddBrand.Image = Nothing
-        Me.btnAddBrand.ImageSize = New System.Drawing.Size(20, 20)
-        Me.btnAddBrand.LineColor = System.Drawing.Color.DarkGray
-        Me.btnAddBrand.Location = New System.Drawing.Point(1160, 57)
-        Me.btnAddBrand.Name = "btnAddBrand"
-        Me.btnAddBrand.OnHoverBaseColor = System.Drawing.Color.DarkGray
-        Me.btnAddBrand.OnHoverBorderColor = System.Drawing.Color.DarkGray
-        Me.btnAddBrand.OnHoverForeColor = System.Drawing.Color.White
-        Me.btnAddBrand.OnHoverImage = Nothing
-        Me.btnAddBrand.OnHoverLineColor = System.Drawing.Color.DarkGray
-        Me.btnAddBrand.OnPressedColor = System.Drawing.Color.DarkGray
-        Me.btnAddBrand.Size = New System.Drawing.Size(213, 55)
-        Me.btnAddBrand.TabIndex = 5
-        Me.btnAddBrand.Text = "Add Brand"
-        Me.btnAddBrand.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.btnAddGeneric.AnimationHoverSpeed = 0.07!
+        Me.btnAddGeneric.AnimationSpeed = 0.03!
+        Me.btnAddGeneric.BaseColor = System.Drawing.Color.LightSlateGray
+        Me.btnAddGeneric.BorderColor = System.Drawing.Color.LightSlateGray
+        Me.btnAddGeneric.CheckedBaseColor = System.Drawing.Color.Gray
+        Me.btnAddGeneric.CheckedBorderColor = System.Drawing.Color.Gray
+        Me.btnAddGeneric.CheckedForeColor = System.Drawing.Color.White
+        Me.btnAddGeneric.CheckedImage = Nothing
+        Me.btnAddGeneric.CheckedLineColor = System.Drawing.Color.Gray
+        Me.btnAddGeneric.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnAddGeneric.DialogResult = System.Windows.Forms.DialogResult.None
+        Me.btnAddGeneric.FocusedColor = System.Drawing.Color.Empty
+        Me.btnAddGeneric.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAddGeneric.ForeColor = System.Drawing.Color.White
+        Me.btnAddGeneric.Image = Nothing
+        Me.btnAddGeneric.ImageSize = New System.Drawing.Size(20, 20)
+        Me.btnAddGeneric.LineColor = System.Drawing.Color.DarkGray
+        Me.btnAddGeneric.Location = New System.Drawing.Point(1160, 57)
+        Me.btnAddGeneric.Name = "btnAddGeneric"
+        Me.btnAddGeneric.OnHoverBaseColor = System.Drawing.Color.DarkGray
+        Me.btnAddGeneric.OnHoverBorderColor = System.Drawing.Color.DarkGray
+        Me.btnAddGeneric.OnHoverForeColor = System.Drawing.Color.White
+        Me.btnAddGeneric.OnHoverImage = Nothing
+        Me.btnAddGeneric.OnHoverLineColor = System.Drawing.Color.DarkGray
+        Me.btnAddGeneric.OnPressedColor = System.Drawing.Color.DarkGray
+        Me.btnAddGeneric.Size = New System.Drawing.Size(213, 55)
+        Me.btnAddGeneric.TabIndex = 8
+        Me.btnAddGeneric.Text = "Add Generic"
+        Me.btnAddGeneric.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'gunaGridCategories
         '
@@ -170,7 +170,7 @@ Partial Class FormBrandList
         Me.gunaGridCategories.RowHeadersVisible = False
         Me.gunaGridCategories.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.gunaGridCategories.Size = New System.Drawing.Size(1551, 850)
-        Me.gunaGridCategories.TabIndex = 4
+        Me.gunaGridCategories.TabIndex = 7
         Me.gunaGridCategories.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna
         Me.gunaGridCategories.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
         Me.gunaGridCategories.ThemeStyle.AlternatingRowsStyle.Font = Nothing
@@ -194,12 +194,40 @@ Partial Class FormBrandList
         Me.gunaGridCategories.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.Silver
         Me.gunaGridCategories.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White
         '
+        'Column1
+        '
+        Me.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.Column1.HeaderText = "#"
+        Me.Column1.Name = "Column1"
+        Me.Column1.ReadOnly = True
+        Me.Column1.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.Column1.Width = 43
+        '
+        'Column2
+        '
+        Me.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.Column2.HeaderText = "ID"
+        Me.Column2.Name = "Column2"
+        Me.Column2.ReadOnly = True
+        Me.Column2.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.Column2.Visible = False
+        Me.Column2.Width = 49
+        '
+        'Column3
+        '
+        Me.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column3.HeaderText = "GENERIC NAME"
+        Me.Column3.Name = "Column3"
+        Me.Column3.ReadOnly = True
+        Me.Column3.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        '
         'DataGridViewImageColumn1
         '
         Me.DataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewImageColumn1.HeaderText = ""
         Me.DataGridViewImageColumn1.Image = Global.PharmacySystem.My.Resources.Resources.pencildatagrid
         Me.DataGridViewImageColumn1.Name = "DataGridViewImageColumn1"
+        Me.DataGridViewImageColumn1.ReadOnly = True
         Me.DataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
         Me.DataGridViewImageColumn1.Width = 5
         '
@@ -209,8 +237,29 @@ Partial Class FormBrandList
         Me.DataGridViewImageColumn2.HeaderText = ""
         Me.DataGridViewImageColumn2.Image = Global.PharmacySystem.My.Resources.Resources.closedatagrid
         Me.DataGridViewImageColumn2.Name = "DataGridViewImageColumn2"
+        Me.DataGridViewImageColumn2.ReadOnly = True
         Me.DataGridViewImageColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
         Me.DataGridViewImageColumn2.Width = 5
+        '
+        'Edit
+        '
+        Me.Edit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.Edit.HeaderText = ""
+        Me.Edit.Image = Global.PharmacySystem.My.Resources.Resources.pencildatagrid
+        Me.Edit.Name = "Edit"
+        Me.Edit.ReadOnly = True
+        Me.Edit.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.Edit.Width = 5
+        '
+        'Delete
+        '
+        Me.Delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.Delete.HeaderText = ""
+        Me.Delete.Image = Global.PharmacySystem.My.Resources.Resources.closedatagrid
+        Me.Delete.Name = "Delete"
+        Me.Delete.ReadOnly = True
+        Me.Delete.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.Delete.Width = 5
         '
         'btnCloseForm
         '
@@ -243,54 +292,7 @@ Partial Class FormBrandList
         Me.btnCloseForm.TabIndex = 4
         Me.btnCloseForm.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'Column1
-        '
-        Me.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.Column1.HeaderText = "#"
-        Me.Column1.Name = "Column1"
-        Me.Column1.ReadOnly = True
-        Me.Column1.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.Column1.Width = 43
-        '
-        'Column2
-        '
-        Me.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.Column2.HeaderText = "ID"
-        Me.Column2.Name = "Column2"
-        Me.Column2.ReadOnly = True
-        Me.Column2.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.Column2.Visible = False
-        Me.Column2.Width = 49
-        '
-        'Column3
-        '
-        Me.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.Column3.HeaderText = "BRAND NAME"
-        Me.Column3.Name = "Column3"
-        Me.Column3.ReadOnly = True
-        Me.Column3.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
-        '
-        'Edit
-        '
-        Me.Edit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.Edit.HeaderText = ""
-        Me.Edit.Image = Global.PharmacySystem.My.Resources.Resources.pencildatagrid
-        Me.Edit.Name = "Edit"
-        Me.Edit.ReadOnly = True
-        Me.Edit.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.Edit.Width = 5
-        '
-        'Delete
-        '
-        Me.Delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.Delete.HeaderText = ""
-        Me.Delete.Image = Global.PharmacySystem.My.Resources.Resources.closedatagrid
-        Me.Delete.Name = "Delete"
-        Me.Delete.ReadOnly = True
-        Me.Delete.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.Delete.Width = 5
-        '
-        'FormBrandList
+        'FormGenericList
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 21.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -298,13 +300,13 @@ Partial Class FormBrandList
         Me.ClientSize = New System.Drawing.Size(1551, 970)
         Me.ControlBox = False
         Me.Controls.Add(Me.btnRefresh)
-        Me.Controls.Add(Me.btnAddBrand)
+        Me.Controls.Add(Me.btnAddGeneric)
         Me.Controls.Add(Me.gunaGridCategories)
         Me.Controls.Add(Me.Panel1)
         Me.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.Name = "FormBrandList"
+        Me.Name = "FormGenericList"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
@@ -317,13 +319,13 @@ Partial Class FormBrandList
     Friend WithEvents btnCloseForm As Guna.UI.WinForms.GunaAdvenceButton
     Friend WithEvents Label1 As Label
     Friend WithEvents btnRefresh As Guna.UI.WinForms.GunaAdvenceButton
-    Friend WithEvents btnAddBrand As Guna.UI.WinForms.GunaAdvenceButton
+    Friend WithEvents btnAddGeneric As Guna.UI.WinForms.GunaAdvenceButton
     Friend WithEvents gunaGridCategories As Guna.UI.WinForms.GunaDataGridView
-    Friend WithEvents DataGridViewImageColumn1 As DataGridViewImageColumn
-    Friend WithEvents DataGridViewImageColumn2 As DataGridViewImageColumn
     Friend WithEvents Column1 As DataGridViewTextBoxColumn
     Friend WithEvents Column2 As DataGridViewTextBoxColumn
     Friend WithEvents Column3 As DataGridViewTextBoxColumn
     Friend WithEvents Edit As DataGridViewImageColumn
     Friend WithEvents Delete As DataGridViewImageColumn
+    Friend WithEvents DataGridViewImageColumn1 As DataGridViewImageColumn
+    Friend WithEvents DataGridViewImageColumn2 As DataGridViewImageColumn
 End Class
