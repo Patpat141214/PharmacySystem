@@ -21,6 +21,7 @@
             With FormGenericList
                 .TopLevel = False
                 Panel3.Controls.Add(FormGenericList)
+                .loadGenericList()
                 .BringToFront()
                 .Show()
             End With

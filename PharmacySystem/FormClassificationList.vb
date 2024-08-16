@@ -11,7 +11,7 @@ Public Class FormClassificationList
         Dim i As Integer = 0
         gunaGridCategories.Rows.Clear()
         conn.Open()
-        cm = New SqlCommand("Select * from tblClassification", conn)
+        cm = New SqlCommand("Select * from tblClassification order by classification ASC", conn)
         dr = cm.ExecuteReader
         While dr.Read
             i += 1

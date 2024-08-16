@@ -15,7 +15,7 @@ Public Class FormBrandList
         Dim i As Integer = 0
         gunaGridCategories.Rows.Clear()
         conn.Open()
-        cm = New SqlCommand("Select * from tblBrand", conn)
+        cm = New SqlCommand("Select * from tblBrand order by brand ASC", conn)
         dr = cm.ExecuteReader
         While dr.Read
             i += 1

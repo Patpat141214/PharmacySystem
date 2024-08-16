@@ -15,7 +15,7 @@ Public Class FormGenericList
         Dim i As Integer = 0
         gunaGridCategories.Rows.Clear()
         conn.Open()
-        cm = New SqlCommand("Select * from tblGeneric", conn)
+        cm = New SqlCommand("Select * from tblGeneric order by generic ASC", conn)
         dr = cm.ExecuteReader
         While dr.Read
             i += 1
