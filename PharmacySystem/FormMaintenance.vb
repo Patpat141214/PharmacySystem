@@ -25,6 +25,13 @@
                 .BringToFront()
                 .Show()
             End With
+        ElseIf MetroTabControl1.SelectedIndex = 4 Then
+            With FormTypeList
+                .TopLevel = False
+                Panel6.Controls.Add(FormTypeList)
+                .BringToFront()
+                .Show()
+            End With
         End If
     End Sub
 

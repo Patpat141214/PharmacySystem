@@ -134,6 +134,24 @@
     <Compile Include="FormMaintenance.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormTypeEntry.Designer.vb">
+      <DependentUpon>FormTypeEntry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormTypeEntry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTypeList.Designer.vb">
+      <DependentUpon>FormTypeList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormTypeList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTypeUpdate.Designer.vb">
+      <DependentUpon>FormTypeUpdate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormTypeUpdate.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormUpdateBrand.Designer.vb">
       <DependentUpon>FormUpdateBrand.vb</DependentUpon>
     </Compile>
@@ -194,6 +212,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMaintenance.resx">
       <DependentUpon>FormMaintenance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTypeEntry.resx">
+      <DependentUpon>FormTypeEntry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTypeList.resx">
+      <DependentUpon>FormTypeList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTypeUpdate.resx">
+      <DependentUpon>FormTypeUpdate.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormUpdateBrand.resx">
       <DependentUpon>FormUpdateBrand.vb</DependentUpon>
