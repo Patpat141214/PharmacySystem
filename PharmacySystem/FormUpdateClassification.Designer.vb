@@ -23,13 +23,13 @@ Partial Class FormUpdateClassification
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.btnCloseForm = New Guna.UI.WinForms.GunaAdvenceButton()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.btnClear = New Guna.UI.WinForms.GunaAdvenceButton()
         Me.btnUpdateCat = New Guna.UI.WinForms.GunaAdvenceButton()
-        Me.txtCat = New System.Windows.Forms.TextBox()
         Me.lblID = New System.Windows.Forms.Label()
-        Me.btnCloseForm = New Guna.UI.WinForms.GunaAdvenceButton()
+        Me.txtCat = New MetroFramework.Controls.MetroTextBox()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -44,6 +44,37 @@ Partial Class FormUpdateClassification
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(401, 49)
         Me.Panel1.TabIndex = 2
+        '
+        'btnCloseForm
+        '
+        Me.btnCloseForm.AnimationHoverSpeed = 0.07!
+        Me.btnCloseForm.AnimationSpeed = 0.03!
+        Me.btnCloseForm.BaseColor = System.Drawing.Color.Transparent
+        Me.btnCloseForm.BorderColor = System.Drawing.Color.Transparent
+        Me.btnCloseForm.CheckedBaseColor = System.Drawing.Color.Transparent
+        Me.btnCloseForm.CheckedBorderColor = System.Drawing.Color.Transparent
+        Me.btnCloseForm.CheckedForeColor = System.Drawing.Color.Transparent
+        Me.btnCloseForm.CheckedImage = Nothing
+        Me.btnCloseForm.CheckedLineColor = System.Drawing.Color.Transparent
+        Me.btnCloseForm.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnCloseForm.DialogResult = System.Windows.Forms.DialogResult.None
+        Me.btnCloseForm.FocusedColor = System.Drawing.Color.Empty
+        Me.btnCloseForm.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCloseForm.ForeColor = System.Drawing.Color.White
+        Me.btnCloseForm.Image = Global.PharmacySystem.My.Resources.Resources.delete
+        Me.btnCloseForm.ImageSize = New System.Drawing.Size(22, 22)
+        Me.btnCloseForm.LineColor = System.Drawing.Color.Transparent
+        Me.btnCloseForm.Location = New System.Drawing.Point(354, 5)
+        Me.btnCloseForm.Name = "btnCloseForm"
+        Me.btnCloseForm.OnHoverBaseColor = System.Drawing.Color.Transparent
+        Me.btnCloseForm.OnHoverBorderColor = System.Drawing.Color.Transparent
+        Me.btnCloseForm.OnHoverForeColor = System.Drawing.Color.Transparent
+        Me.btnCloseForm.OnHoverImage = Global.PharmacySystem.My.Resources.Resources.delete__1_
+        Me.btnCloseForm.OnHoverLineColor = System.Drawing.Color.Transparent
+        Me.btnCloseForm.OnPressedColor = System.Drawing.Color.Transparent
+        Me.btnCloseForm.Size = New System.Drawing.Size(41, 38)
+        Me.btnCloseForm.TabIndex = 3
+        Me.btnCloseForm.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label1
         '
@@ -86,7 +117,7 @@ Partial Class FormUpdateClassification
         Me.btnClear.Image = Nothing
         Me.btnClear.ImageSize = New System.Drawing.Size(20, 20)
         Me.btnClear.LineColor = System.Drawing.Color.DarkGray
-        Me.btnClear.Location = New System.Drawing.Point(278, 123)
+        Me.btnClear.Location = New System.Drawing.Point(277, 119)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.OnHoverBaseColor = System.Drawing.Color.DarkGray
         Me.btnClear.OnHoverBorderColor = System.Drawing.Color.DarkGray
@@ -118,7 +149,7 @@ Partial Class FormUpdateClassification
         Me.btnUpdateCat.Image = Nothing
         Me.btnUpdateCat.ImageSize = New System.Drawing.Size(20, 20)
         Me.btnUpdateCat.LineColor = System.Drawing.Color.DarkGray
-        Me.btnUpdateCat.Location = New System.Drawing.Point(160, 123)
+        Me.btnUpdateCat.Location = New System.Drawing.Point(160, 119)
         Me.btnUpdateCat.Name = "btnUpdateCat"
         Me.btnUpdateCat.OnHoverBaseColor = System.Drawing.Color.DarkGray
         Me.btnUpdateCat.OnHoverBorderColor = System.Drawing.Color.DarkGray
@@ -131,14 +162,6 @@ Partial Class FormUpdateClassification
         Me.btnUpdateCat.Text = "Update"
         Me.btnUpdateCat.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'txtCat
-        '
-        Me.txtCat.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCat.Location = New System.Drawing.Point(13, 82)
-        Me.txtCat.Name = "txtCat"
-        Me.txtCat.Size = New System.Drawing.Size(377, 33)
-        Me.txtCat.TabIndex = 6
-        '
         'lblID
         '
         Me.lblID.AutoSize = True
@@ -150,49 +173,52 @@ Partial Class FormUpdateClassification
         Me.lblID.TabIndex = 10
         Me.lblID.Visible = False
         '
-        'btnCloseForm
+        'txtCat
         '
-        Me.btnCloseForm.AnimationHoverSpeed = 0.07!
-        Me.btnCloseForm.AnimationSpeed = 0.03!
-        Me.btnCloseForm.BaseColor = System.Drawing.Color.Transparent
-        Me.btnCloseForm.BorderColor = System.Drawing.Color.Transparent
-        Me.btnCloseForm.CheckedBaseColor = System.Drawing.Color.Transparent
-        Me.btnCloseForm.CheckedBorderColor = System.Drawing.Color.Transparent
-        Me.btnCloseForm.CheckedForeColor = System.Drawing.Color.Transparent
-        Me.btnCloseForm.CheckedImage = Nothing
-        Me.btnCloseForm.CheckedLineColor = System.Drawing.Color.Transparent
-        Me.btnCloseForm.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnCloseForm.DialogResult = System.Windows.Forms.DialogResult.None
-        Me.btnCloseForm.FocusedColor = System.Drawing.Color.Empty
-        Me.btnCloseForm.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCloseForm.ForeColor = System.Drawing.Color.White
-        Me.btnCloseForm.Image = Global.PharmacySystem.My.Resources.Resources.delete
-        Me.btnCloseForm.ImageSize = New System.Drawing.Size(22, 22)
-        Me.btnCloseForm.LineColor = System.Drawing.Color.Transparent
-        Me.btnCloseForm.Location = New System.Drawing.Point(354, 5)
-        Me.btnCloseForm.Name = "btnCloseForm"
-        Me.btnCloseForm.OnHoverBaseColor = System.Drawing.Color.Transparent
-        Me.btnCloseForm.OnHoverBorderColor = System.Drawing.Color.Transparent
-        Me.btnCloseForm.OnHoverForeColor = System.Drawing.Color.Transparent
-        Me.btnCloseForm.OnHoverImage = Global.PharmacySystem.My.Resources.Resources.delete__1_
-        Me.btnCloseForm.OnHoverLineColor = System.Drawing.Color.Transparent
-        Me.btnCloseForm.OnPressedColor = System.Drawing.Color.Transparent
-        Me.btnCloseForm.Size = New System.Drawing.Size(41, 38)
-        Me.btnCloseForm.TabIndex = 3
-        Me.btnCloseForm.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        '
+        '
+        Me.txtCat.CustomButton.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCat.CustomButton.Image = Nothing
+        Me.txtCat.CustomButton.Location = New System.Drawing.Point(349, 1)
+        Me.txtCat.CustomButton.Name = ""
+        Me.txtCat.CustomButton.Size = New System.Drawing.Size(27, 27)
+        Me.txtCat.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
+        Me.txtCat.CustomButton.TabIndex = 1
+        Me.txtCat.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
+        Me.txtCat.CustomButton.UseSelectable = True
+        Me.txtCat.CustomButton.Visible = False
+        Me.txtCat.FontSize = MetroFramework.MetroTextBoxSize.Medium
+        Me.txtCat.Lines = New String(-1) {}
+        Me.txtCat.Location = New System.Drawing.Point(12, 82)
+        Me.txtCat.MaxLength = 32767
+        Me.txtCat.Name = "txtCat"
+        Me.txtCat.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtCat.PromptText = "Classification"
+        Me.txtCat.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.txtCat.SelectedText = ""
+        Me.txtCat.SelectionLength = 0
+        Me.txtCat.SelectionStart = 0
+        Me.txtCat.ShortcutsEnabled = True
+        Me.txtCat.Size = New System.Drawing.Size(377, 29)
+        Me.txtCat.TabIndex = 11
+        Me.txtCat.UseSelectable = True
+        Me.txtCat.WaterMark = "Classification"
+        Me.txtCat.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        Me.txtCat.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
         'FormUpdateClassification
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 21.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(401, 171)
+        Me.ClientSize = New System.Drawing.Size(401, 167)
         Me.ControlBox = False
+        Me.Controls.Add(Me.txtCat)
         Me.Controls.Add(Me.lblID)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnUpdateCat)
-        Me.Controls.Add(Me.txtCat)
         Me.Controls.Add(Me.Panel1)
         Me.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
@@ -212,6 +238,6 @@ Partial Class FormUpdateClassification
     Friend WithEvents Label2 As Label
     Friend WithEvents btnClear As Guna.UI.WinForms.GunaAdvenceButton
     Friend WithEvents btnUpdateCat As Guna.UI.WinForms.GunaAdvenceButton
-    Friend WithEvents txtCat As TextBox
     Friend WithEvents lblID As Label
+    Friend WithEvents txtCat As MetroFramework.Controls.MetroTextBox
 End Class

@@ -29,7 +29,7 @@ Partial Class FormTypeUpdate
         Me.Label2 = New System.Windows.Forms.Label()
         Me.btnClear = New Guna.UI.WinForms.GunaAdvenceButton()
         Me.btnUpdateType = New Guna.UI.WinForms.GunaAdvenceButton()
-        Me.txtType = New System.Windows.Forms.TextBox()
+        Me.txtType = New MetroFramework.Controls.MetroTextBox()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -175,11 +175,37 @@ Partial Class FormTypeUpdate
         '
         'txtType
         '
-        Me.txtType.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        '
+        '
+        '
+        Me.txtType.CustomButton.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtType.CustomButton.Image = Nothing
+        Me.txtType.CustomButton.Location = New System.Drawing.Point(349, 1)
+        Me.txtType.CustomButton.Name = ""
+        Me.txtType.CustomButton.Size = New System.Drawing.Size(27, 27)
+        Me.txtType.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
+        Me.txtType.CustomButton.TabIndex = 1
+        Me.txtType.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
+        Me.txtType.CustomButton.UseSelectable = True
+        Me.txtType.CustomButton.Visible = False
+        Me.txtType.FontSize = MetroFramework.MetroTextBoxSize.Medium
+        Me.txtType.Lines = New String(-1) {}
         Me.txtType.Location = New System.Drawing.Point(12, 80)
+        Me.txtType.MaxLength = 32767
         Me.txtType.Name = "txtType"
-        Me.txtType.Size = New System.Drawing.Size(377, 33)
-        Me.txtType.TabIndex = 16
+        Me.txtType.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtType.PromptText = "Type"
+        Me.txtType.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.txtType.SelectedText = ""
+        Me.txtType.SelectionLength = 0
+        Me.txtType.SelectionStart = 0
+        Me.txtType.ShortcutsEnabled = True
+        Me.txtType.Size = New System.Drawing.Size(377, 29)
+        Me.txtType.TabIndex = 21
+        Me.txtType.UseSelectable = True
+        Me.txtType.WaterMark = "Type"
+        Me.txtType.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        Me.txtType.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
         'FormTypeUpdate
         '
@@ -188,11 +214,11 @@ Partial Class FormTypeUpdate
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(401, 171)
         Me.ControlBox = False
+        Me.Controls.Add(Me.txtType)
         Me.Controls.Add(Me.lblID)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnUpdateType)
-        Me.Controls.Add(Me.txtType)
         Me.Controls.Add(Me.Panel1)
         Me.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
@@ -213,5 +239,5 @@ Partial Class FormTypeUpdate
     Friend WithEvents Label2 As Label
     Friend WithEvents btnClear As Guna.UI.WinForms.GunaAdvenceButton
     Friend WithEvents btnUpdateType As Guna.UI.WinForms.GunaAdvenceButton
-    Friend WithEvents txtType As TextBox
+    Friend WithEvents txtType As MetroFramework.Controls.MetroTextBox
 End Class

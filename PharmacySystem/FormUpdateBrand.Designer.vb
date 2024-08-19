@@ -29,7 +29,7 @@ Partial Class FormUpdateBrand
         Me.Label2 = New System.Windows.Forms.Label()
         Me.btnClear = New Guna.UI.WinForms.GunaAdvenceButton()
         Me.btnUpdateBrand = New Guna.UI.WinForms.GunaAdvenceButton()
-        Me.txtBrand = New System.Windows.Forms.TextBox()
+        Me.txtBrand = New MetroFramework.Controls.MetroTextBox()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -175,11 +175,37 @@ Partial Class FormUpdateBrand
         '
         'txtBrand
         '
-        Me.txtBrand.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        '
+        '
+        '
+        Me.txtBrand.CustomButton.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtBrand.CustomButton.Image = Nothing
+        Me.txtBrand.CustomButton.Location = New System.Drawing.Point(349, 1)
+        Me.txtBrand.CustomButton.Name = ""
+        Me.txtBrand.CustomButton.Size = New System.Drawing.Size(27, 27)
+        Me.txtBrand.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
+        Me.txtBrand.CustomButton.TabIndex = 1
+        Me.txtBrand.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
+        Me.txtBrand.CustomButton.UseSelectable = True
+        Me.txtBrand.CustomButton.Visible = False
+        Me.txtBrand.FontSize = MetroFramework.MetroTextBoxSize.Medium
+        Me.txtBrand.Lines = New String(-1) {}
         Me.txtBrand.Location = New System.Drawing.Point(11, 78)
+        Me.txtBrand.MaxLength = 32767
         Me.txtBrand.Name = "txtBrand"
-        Me.txtBrand.Size = New System.Drawing.Size(377, 33)
-        Me.txtBrand.TabIndex = 11
+        Me.txtBrand.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtBrand.PromptText = "Brand"
+        Me.txtBrand.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.txtBrand.SelectedText = ""
+        Me.txtBrand.SelectionLength = 0
+        Me.txtBrand.SelectionStart = 0
+        Me.txtBrand.ShortcutsEnabled = True
+        Me.txtBrand.Size = New System.Drawing.Size(377, 29)
+        Me.txtBrand.TabIndex = 16
+        Me.txtBrand.UseSelectable = True
+        Me.txtBrand.WaterMark = "Brand"
+        Me.txtBrand.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        Me.txtBrand.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
         'FormUpdateBrand
         '
@@ -188,11 +214,11 @@ Partial Class FormUpdateBrand
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(401, 171)
         Me.ControlBox = False
+        Me.Controls.Add(Me.txtBrand)
         Me.Controls.Add(Me.lblID)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnUpdateBrand)
-        Me.Controls.Add(Me.txtBrand)
         Me.Controls.Add(Me.Panel1)
         Me.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
@@ -213,5 +239,5 @@ Partial Class FormUpdateBrand
     Friend WithEvents Label2 As Label
     Friend WithEvents btnClear As Guna.UI.WinForms.GunaAdvenceButton
     Friend WithEvents btnUpdateBrand As Guna.UI.WinForms.GunaAdvenceButton
-    Friend WithEvents txtBrand As TextBox
+    Friend WithEvents txtBrand As MetroFramework.Controls.MetroTextBox
 End Class

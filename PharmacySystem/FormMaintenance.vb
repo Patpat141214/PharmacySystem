@@ -32,6 +32,15 @@
                 .BringToFront()
                 .Show()
             End With
+        ElseIf MetroTabControl1.SelectedIndex = 2 Then
+            With FormFormulationList
+                .TopLevel = False
+                Panel4.Controls.Add(FormFormulationList)
+                .BringToFront()
+                .loadFormulationList()
+                .Show()
+            End With
+
         End If
     End Sub
 

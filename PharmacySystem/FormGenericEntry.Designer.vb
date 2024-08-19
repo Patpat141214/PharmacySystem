@@ -23,12 +23,12 @@ Partial Class FormGenericEntry
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.btnCloseForm = New Guna.UI.WinForms.GunaAdvenceButton()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.btnClear = New Guna.UI.WinForms.GunaAdvenceButton()
         Me.btnSaveGeneric = New Guna.UI.WinForms.GunaAdvenceButton()
-        Me.txtGeneric = New System.Windows.Forms.TextBox()
+        Me.txtGeneric = New MetroFramework.Controls.MetroTextBox()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -43,17 +43,6 @@ Partial Class FormGenericEntry
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(403, 49)
         Me.Panel1.TabIndex = 3
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(8, 8)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(145, 30)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Generic Entry"
         '
         'btnCloseForm
         '
@@ -85,6 +74,17 @@ Partial Class FormGenericEntry
         Me.btnCloseForm.Size = New System.Drawing.Size(41, 38)
         Me.btnCloseForm.TabIndex = 3
         Me.btnCloseForm.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(8, 8)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(145, 30)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Generic Entry"
         '
         'Label2
         '
@@ -163,11 +163,37 @@ Partial Class FormGenericEntry
         '
         'txtGeneric
         '
-        Me.txtGeneric.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        '
+        '
+        '
+        Me.txtGeneric.CustomButton.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtGeneric.CustomButton.Image = Nothing
+        Me.txtGeneric.CustomButton.Location = New System.Drawing.Point(349, 1)
+        Me.txtGeneric.CustomButton.Name = ""
+        Me.txtGeneric.CustomButton.Size = New System.Drawing.Size(27, 27)
+        Me.txtGeneric.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
+        Me.txtGeneric.CustomButton.TabIndex = 1
+        Me.txtGeneric.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
+        Me.txtGeneric.CustomButton.UseSelectable = True
+        Me.txtGeneric.CustomButton.Visible = False
+        Me.txtGeneric.FontSize = MetroFramework.MetroTextBoxSize.Medium
+        Me.txtGeneric.Lines = New String(-1) {}
         Me.txtGeneric.Location = New System.Drawing.Point(12, 82)
+        Me.txtGeneric.MaxLength = 32767
         Me.txtGeneric.Name = "txtGeneric"
-        Me.txtGeneric.Size = New System.Drawing.Size(377, 33)
-        Me.txtGeneric.TabIndex = 10
+        Me.txtGeneric.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtGeneric.PromptText = "Generic"
+        Me.txtGeneric.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.txtGeneric.SelectedText = ""
+        Me.txtGeneric.SelectionLength = 0
+        Me.txtGeneric.SelectionStart = 0
+        Me.txtGeneric.ShortcutsEnabled = True
+        Me.txtGeneric.Size = New System.Drawing.Size(377, 29)
+        Me.txtGeneric.TabIndex = 17
+        Me.txtGeneric.UseSelectable = True
+        Me.txtGeneric.WaterMark = "Generic"
+        Me.txtGeneric.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        Me.txtGeneric.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
         'FormGenericEntry
         '
@@ -176,10 +202,10 @@ Partial Class FormGenericEntry
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(403, 173)
         Me.ControlBox = False
+        Me.Controls.Add(Me.txtGeneric)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnSaveGeneric)
-        Me.Controls.Add(Me.txtGeneric)
         Me.Controls.Add(Me.Panel1)
         Me.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
@@ -199,5 +225,5 @@ Partial Class FormGenericEntry
     Friend WithEvents Label2 As Label
     Friend WithEvents btnClear As Guna.UI.WinForms.GunaAdvenceButton
     Friend WithEvents btnSaveGeneric As Guna.UI.WinForms.GunaAdvenceButton
-    Friend WithEvents txtGeneric As TextBox
+    Friend WithEvents txtGeneric As MetroFramework.Controls.MetroTextBox
 End Class
