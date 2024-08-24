@@ -47,4 +47,14 @@ Public Class FormGenericUpdate
     Private Sub FormGenericUpdate_Shown(sender As Object, e As EventArgs) Handles MyBase.Shown
         txtGeneric.Focus()
     End Sub
+
+    Private Sub FormGenericUpdate_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.KeyPreview = True
+    End Sub
+
+    Private Sub FormGenericUpdate_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            btnUpdateGeneric_Click(sender, e)
+        End If
+    End Sub
 End Class

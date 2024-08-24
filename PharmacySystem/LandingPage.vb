@@ -19,4 +19,13 @@
 	Private Sub btnLogout_Click(sender As Object, e As EventArgs) Handles btnLogout.Click
 		Application.Exit()
 	End Sub
+
+	Private Sub btnProducts_Click(sender As Object, e As EventArgs) Handles btnProducts.Click
+		With FormProductsList
+			.TopLevel = False
+			Panel2.Controls.Add(FormProductsList)
+			.BringToFront()
+			.Show()
+		End With
+	End Sub
 End Class

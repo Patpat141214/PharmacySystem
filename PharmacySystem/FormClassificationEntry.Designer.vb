@@ -168,9 +168,9 @@ Partial Class FormClassificationEntry
         '
         Me.txtCat.CustomButton.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtCat.CustomButton.Image = Nothing
-        Me.txtCat.CustomButton.Location = New System.Drawing.Point(349, 2)
+        Me.txtCat.CustomButton.Location = New System.Drawing.Point(349, 1)
         Me.txtCat.CustomButton.Name = ""
-        Me.txtCat.CustomButton.Size = New System.Drawing.Size(25, 25)
+        Me.txtCat.CustomButton.Size = New System.Drawing.Size(27, 27)
         Me.txtCat.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
         Me.txtCat.CustomButton.TabIndex = 1
         Me.txtCat.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light

@@ -29,6 +29,7 @@
             With FormTypeList
                 .TopLevel = False
                 Panel6.Controls.Add(FormTypeList)
+                .loadTypeList()
                 .BringToFront()
                 .Show()
             End With

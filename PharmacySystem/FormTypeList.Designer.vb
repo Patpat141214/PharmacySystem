@@ -26,18 +26,18 @@ Partial Class FormTypeList
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.btnCloseForm = New Guna.UI.WinForms.GunaAdvenceButton()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.gunaGridCategories = New Guna.UI.WinForms.GunaDataGridView()
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Edit = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.Delete = New System.Windows.Forms.DataGridViewImageColumn()
         Me.btnRefresh = New Guna.UI.WinForms.GunaAdvenceButton()
         Me.btnAddType = New Guna.UI.WinForms.GunaAdvenceButton()
         Me.DataGridViewImageColumn1 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.DataGridViewImageColumn2 = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.Edit = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.Delete = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.btnCloseForm = New Guna.UI.WinForms.GunaAdvenceButton()
         Me.Panel1.SuspendLayout()
         CType(Me.gunaGridCategories, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -53,6 +53,37 @@ Partial Class FormTypeList
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1551, 49)
         Me.Panel1.TabIndex = 1
+        '
+        'btnCloseForm
+        '
+        Me.btnCloseForm.AnimationHoverSpeed = 0.07!
+        Me.btnCloseForm.AnimationSpeed = 0.03!
+        Me.btnCloseForm.BaseColor = System.Drawing.Color.Transparent
+        Me.btnCloseForm.BorderColor = System.Drawing.Color.Transparent
+        Me.btnCloseForm.CheckedBaseColor = System.Drawing.Color.Transparent
+        Me.btnCloseForm.CheckedBorderColor = System.Drawing.Color.Transparent
+        Me.btnCloseForm.CheckedForeColor = System.Drawing.Color.Transparent
+        Me.btnCloseForm.CheckedImage = Nothing
+        Me.btnCloseForm.CheckedLineColor = System.Drawing.Color.Transparent
+        Me.btnCloseForm.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnCloseForm.DialogResult = System.Windows.Forms.DialogResult.None
+        Me.btnCloseForm.FocusedColor = System.Drawing.Color.Empty
+        Me.btnCloseForm.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCloseForm.ForeColor = System.Drawing.Color.White
+        Me.btnCloseForm.Image = Global.PharmacySystem.My.Resources.Resources.delete
+        Me.btnCloseForm.ImageSize = New System.Drawing.Size(22, 22)
+        Me.btnCloseForm.LineColor = System.Drawing.Color.Transparent
+        Me.btnCloseForm.Location = New System.Drawing.Point(1504, 6)
+        Me.btnCloseForm.Name = "btnCloseForm"
+        Me.btnCloseForm.OnHoverBaseColor = System.Drawing.Color.Transparent
+        Me.btnCloseForm.OnHoverBorderColor = System.Drawing.Color.Transparent
+        Me.btnCloseForm.OnHoverForeColor = System.Drawing.Color.Transparent
+        Me.btnCloseForm.OnHoverImage = Global.PharmacySystem.My.Resources.Resources.delete__1_
+        Me.btnCloseForm.OnHoverLineColor = System.Drawing.Color.Transparent
+        Me.btnCloseForm.OnPressedColor = System.Drawing.Color.Transparent
+        Me.btnCloseForm.Size = New System.Drawing.Size(41, 38)
+        Me.btnCloseForm.TabIndex = 4
+        Me.btnCloseForm.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label1
         '
@@ -157,6 +188,26 @@ Partial Class FormTypeList
         Me.Column3.ReadOnly = True
         Me.Column3.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
         '
+        'Edit
+        '
+        Me.Edit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.Edit.HeaderText = ""
+        Me.Edit.Image = Global.PharmacySystem.My.Resources.Resources.pencildatagrid
+        Me.Edit.Name = "Edit"
+        Me.Edit.ReadOnly = True
+        Me.Edit.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.Edit.Width = 5
+        '
+        'Delete
+        '
+        Me.Delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.Delete.HeaderText = ""
+        Me.Delete.Image = Global.PharmacySystem.My.Resources.Resources.closedatagrid
+        Me.Delete.Name = "Delete"
+        Me.Delete.ReadOnly = True
+        Me.Delete.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.Delete.Width = 5
+        '
         'btnRefresh
         '
         Me.btnRefresh.AnimationHoverSpeed = 0.07!
@@ -229,7 +280,6 @@ Partial Class FormTypeList
         Me.DataGridViewImageColumn1.Name = "DataGridViewImageColumn1"
         Me.DataGridViewImageColumn1.ReadOnly = True
         Me.DataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DataGridViewImageColumn1.Width = 5
         '
         'DataGridViewImageColumn2
         '
@@ -239,58 +289,6 @@ Partial Class FormTypeList
         Me.DataGridViewImageColumn2.Name = "DataGridViewImageColumn2"
         Me.DataGridViewImageColumn2.ReadOnly = True
         Me.DataGridViewImageColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DataGridViewImageColumn2.Width = 5
-        '
-        'Edit
-        '
-        Me.Edit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.Edit.HeaderText = ""
-        Me.Edit.Image = Global.PharmacySystem.My.Resources.Resources.pencildatagrid
-        Me.Edit.Name = "Edit"
-        Me.Edit.ReadOnly = True
-        Me.Edit.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.Edit.Width = 5
-        '
-        'Delete
-        '
-        Me.Delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.Delete.HeaderText = ""
-        Me.Delete.Image = Global.PharmacySystem.My.Resources.Resources.closedatagrid
-        Me.Delete.Name = "Delete"
-        Me.Delete.ReadOnly = True
-        Me.Delete.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.Delete.Width = 5
-        '
-        'btnCloseForm
-        '
-        Me.btnCloseForm.AnimationHoverSpeed = 0.07!
-        Me.btnCloseForm.AnimationSpeed = 0.03!
-        Me.btnCloseForm.BaseColor = System.Drawing.Color.Transparent
-        Me.btnCloseForm.BorderColor = System.Drawing.Color.Transparent
-        Me.btnCloseForm.CheckedBaseColor = System.Drawing.Color.Transparent
-        Me.btnCloseForm.CheckedBorderColor = System.Drawing.Color.Transparent
-        Me.btnCloseForm.CheckedForeColor = System.Drawing.Color.Transparent
-        Me.btnCloseForm.CheckedImage = Nothing
-        Me.btnCloseForm.CheckedLineColor = System.Drawing.Color.Transparent
-        Me.btnCloseForm.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnCloseForm.DialogResult = System.Windows.Forms.DialogResult.None
-        Me.btnCloseForm.FocusedColor = System.Drawing.Color.Empty
-        Me.btnCloseForm.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCloseForm.ForeColor = System.Drawing.Color.White
-        Me.btnCloseForm.Image = Global.PharmacySystem.My.Resources.Resources.delete
-        Me.btnCloseForm.ImageSize = New System.Drawing.Size(22, 22)
-        Me.btnCloseForm.LineColor = System.Drawing.Color.Transparent
-        Me.btnCloseForm.Location = New System.Drawing.Point(1504, 6)
-        Me.btnCloseForm.Name = "btnCloseForm"
-        Me.btnCloseForm.OnHoverBaseColor = System.Drawing.Color.Transparent
-        Me.btnCloseForm.OnHoverBorderColor = System.Drawing.Color.Transparent
-        Me.btnCloseForm.OnHoverForeColor = System.Drawing.Color.Transparent
-        Me.btnCloseForm.OnHoverImage = Global.PharmacySystem.My.Resources.Resources.delete__1_
-        Me.btnCloseForm.OnHoverLineColor = System.Drawing.Color.Transparent
-        Me.btnCloseForm.OnPressedColor = System.Drawing.Color.Transparent
-        Me.btnCloseForm.Size = New System.Drawing.Size(41, 38)
-        Me.btnCloseForm.TabIndex = 4
-        Me.btnCloseForm.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'FormTypeList
         '

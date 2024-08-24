@@ -52,4 +52,14 @@ Public Class FormTypeEntry
             MsgBox(ex.Message, vbCritical)
         End Try
     End Sub
+
+    Private Sub FormTypeEntry_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.KeyPreview = True
+    End Sub
+
+    Private Sub FormTypeEntry_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            btnSaveType_Click(sender, e)
+        End If
+    End Sub
 End Class

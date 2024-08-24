@@ -47,4 +47,14 @@ Public Class FormUpdateBrand
     Private Sub FormUpdateBrand_Shown(sender As Object, e As EventArgs) Handles MyBase.Shown
         txtBrand.Focus()
     End Sub
+
+    Private Sub FormUpdateBrand_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.KeyPreview = True
+    End Sub
+
+    Private Sub FormUpdateBrand_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            btnUpdateBrand_Click(sender, e)
+        End If
+    End Sub
 End Class

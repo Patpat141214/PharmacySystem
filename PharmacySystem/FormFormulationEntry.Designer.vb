@@ -23,8 +23,8 @@ Partial Class FormFormulationEntry
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.btnCloseForm = New Guna.UI.WinForms.GunaAdvenceButton()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.txtFormulation = New MetroFramework.Controls.MetroTextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.btnClear = New Guna.UI.WinForms.GunaAdvenceButton()
@@ -43,17 +43,6 @@ Partial Class FormFormulationEntry
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(401, 49)
         Me.Panel1.TabIndex = 4
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(8, 8)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(192, 30)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Formulation Entry"
         '
         'btnCloseForm
         '
@@ -85,6 +74,17 @@ Partial Class FormFormulationEntry
         Me.btnCloseForm.Size = New System.Drawing.Size(41, 38)
         Me.btnCloseForm.TabIndex = 3
         Me.btnCloseForm.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(8, 8)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(192, 30)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Formulation Entry"
         '
         'txtFormulation
         '

@@ -24,18 +24,18 @@ Partial Class LandingPage
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(LandingPage))
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.GunaLabel1 = New Guna.UI.WinForms.GunaLabel()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Panel2 = New System.Windows.Forms.Panel()
         Me.btnLogout = New Guna.UI.WinForms.GunaAdvenceButton()
         Me.GunaAdvenceButton6 = New Guna.UI.WinForms.GunaAdvenceButton()
         Me.GunaAdvenceButton5 = New Guna.UI.WinForms.GunaAdvenceButton()
         Me.GunaAdvenceButton4 = New Guna.UI.WinForms.GunaAdvenceButton()
         Me.GunaAdvenceButton3 = New Guna.UI.WinForms.GunaAdvenceButton()
         Me.btnCategory = New Guna.UI.WinForms.GunaAdvenceButton()
-        Me.GunaAdvenceButton1 = New Guna.UI.WinForms.GunaAdvenceButton()
+        Me.btnProducts = New Guna.UI.WinForms.GunaAdvenceButton()
         Me.btnSales = New Guna.UI.WinForms.GunaAdvenceButton()
+        Me.GunaLabel1 = New Guna.UI.WinForms.GunaLabel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -49,7 +49,7 @@ Partial Class LandingPage
         Me.Panel1.Controls.Add(Me.GunaAdvenceButton4)
         Me.Panel1.Controls.Add(Me.GunaAdvenceButton3)
         Me.Panel1.Controls.Add(Me.btnCategory)
-        Me.Panel1.Controls.Add(Me.GunaAdvenceButton1)
+        Me.Panel1.Controls.Add(Me.btnProducts)
         Me.Panel1.Controls.Add(Me.btnSales)
         Me.Panel1.Controls.Add(Me.GunaLabel1)
         Me.Panel1.Controls.Add(Me.PictureBox1)
@@ -59,34 +59,6 @@ Partial Class LandingPage
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(361, 1080)
         Me.Panel1.TabIndex = 0
-        '
-        'GunaLabel1
-        '
-        Me.GunaLabel1.AutoSize = True
-        Me.GunaLabel1.Font = New System.Drawing.Font("Segoe UI Semibold", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GunaLabel1.Location = New System.Drawing.Point(80, 198)
-        Me.GunaLabel1.Name = "GunaLabel1"
-        Me.GunaLabel1.Size = New System.Drawing.Size(197, 30)
-        Me.GunaLabel1.TabIndex = 1
-        Me.GunaLabel1.Text = "Patche POS System"
-        Me.GunaLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Panel3
-        '
-        Me.Panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel3.Location = New System.Drawing.Point(4, 3)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(353, 266)
-        Me.Panel3.TabIndex = 3
-        '
-        'Panel2
-        '
-        Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel2.Location = New System.Drawing.Point(361, 0)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1559, 1080)
-        Me.Panel2.TabIndex = 4
         '
         'btnLogout
         '
@@ -286,38 +258,38 @@ Partial Class LandingPage
         Me.btnCategory.TabIndex = 5
         Me.btnCategory.Text = "Maintenance"
         '
-        'GunaAdvenceButton1
+        'btnProducts
         '
-        Me.GunaAdvenceButton1.AnimationHoverSpeed = 0.07!
-        Me.GunaAdvenceButton1.AnimationSpeed = 0.03!
-        Me.GunaAdvenceButton1.BaseColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(180, Byte), Integer), CType(CType(195, Byte), Integer))
-        Me.GunaAdvenceButton1.BorderColor = System.Drawing.Color.Transparent
-        Me.GunaAdvenceButton1.BorderSize = 1
-        Me.GunaAdvenceButton1.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton
-        Me.GunaAdvenceButton1.CheckedBaseColor = System.Drawing.Color.FromArgb(CType(CType(134, Byte), Integer), CType(CType(167, Byte), Integer), CType(CType(137, Byte), Integer))
-        Me.GunaAdvenceButton1.CheckedBorderColor = System.Drawing.Color.Transparent
-        Me.GunaAdvenceButton1.CheckedForeColor = System.Drawing.Color.Black
-        Me.GunaAdvenceButton1.CheckedImage = Global.PharmacySystem.My.Resources.Resources.package
-        Me.GunaAdvenceButton1.CheckedLineColor = System.Drawing.Color.FromArgb(CType(CType(134, Byte), Integer), CType(CType(167, Byte), Integer), CType(CType(137, Byte), Integer))
-        Me.GunaAdvenceButton1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.GunaAdvenceButton1.DialogResult = System.Windows.Forms.DialogResult.None
-        Me.GunaAdvenceButton1.FocusedColor = System.Drawing.Color.Empty
-        Me.GunaAdvenceButton1.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GunaAdvenceButton1.ForeColor = System.Drawing.Color.White
-        Me.GunaAdvenceButton1.Image = Global.PharmacySystem.My.Resources.Resources.package
-        Me.GunaAdvenceButton1.ImageSize = New System.Drawing.Size(20, 20)
-        Me.GunaAdvenceButton1.LineColor = System.Drawing.Color.FromArgb(CType(CType(110, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(218, Byte), Integer))
-        Me.GunaAdvenceButton1.Location = New System.Drawing.Point(12, 345)
-        Me.GunaAdvenceButton1.Name = "GunaAdvenceButton1"
-        Me.GunaAdvenceButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(CType(CType(155, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(83, Byte), Integer))
-        Me.GunaAdvenceButton1.OnHoverBorderColor = System.Drawing.Color.Transparent
-        Me.GunaAdvenceButton1.OnHoverForeColor = System.Drawing.Color.Black
-        Me.GunaAdvenceButton1.OnHoverImage = Global.PharmacySystem.My.Resources.Resources.package__1_
-        Me.GunaAdvenceButton1.OnHoverLineColor = System.Drawing.Color.FromArgb(CType(CType(155, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(83, Byte), Integer))
-        Me.GunaAdvenceButton1.OnPressedColor = System.Drawing.Color.FromArgb(CType(CType(155, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(83, Byte), Integer))
-        Me.GunaAdvenceButton1.Size = New System.Drawing.Size(334, 50)
-        Me.GunaAdvenceButton1.TabIndex = 4
-        Me.GunaAdvenceButton1.Text = "Product"
+        Me.btnProducts.AnimationHoverSpeed = 0.07!
+        Me.btnProducts.AnimationSpeed = 0.03!
+        Me.btnProducts.BaseColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(180, Byte), Integer), CType(CType(195, Byte), Integer))
+        Me.btnProducts.BorderColor = System.Drawing.Color.Transparent
+        Me.btnProducts.BorderSize = 1
+        Me.btnProducts.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton
+        Me.btnProducts.CheckedBaseColor = System.Drawing.Color.FromArgb(CType(CType(134, Byte), Integer), CType(CType(167, Byte), Integer), CType(CType(137, Byte), Integer))
+        Me.btnProducts.CheckedBorderColor = System.Drawing.Color.Transparent
+        Me.btnProducts.CheckedForeColor = System.Drawing.Color.Black
+        Me.btnProducts.CheckedImage = Global.PharmacySystem.My.Resources.Resources.package
+        Me.btnProducts.CheckedLineColor = System.Drawing.Color.FromArgb(CType(CType(134, Byte), Integer), CType(CType(167, Byte), Integer), CType(CType(137, Byte), Integer))
+        Me.btnProducts.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnProducts.DialogResult = System.Windows.Forms.DialogResult.None
+        Me.btnProducts.FocusedColor = System.Drawing.Color.Empty
+        Me.btnProducts.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnProducts.ForeColor = System.Drawing.Color.White
+        Me.btnProducts.Image = Global.PharmacySystem.My.Resources.Resources.package
+        Me.btnProducts.ImageSize = New System.Drawing.Size(20, 20)
+        Me.btnProducts.LineColor = System.Drawing.Color.FromArgb(CType(CType(110, Byte), Integer), CType(CType(172, Byte), Integer), CType(CType(218, Byte), Integer))
+        Me.btnProducts.Location = New System.Drawing.Point(12, 345)
+        Me.btnProducts.Name = "btnProducts"
+        Me.btnProducts.OnHoverBaseColor = System.Drawing.Color.FromArgb(CType(CType(155, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(83, Byte), Integer))
+        Me.btnProducts.OnHoverBorderColor = System.Drawing.Color.Transparent
+        Me.btnProducts.OnHoverForeColor = System.Drawing.Color.Black
+        Me.btnProducts.OnHoverImage = Global.PharmacySystem.My.Resources.Resources.package__1_
+        Me.btnProducts.OnHoverLineColor = System.Drawing.Color.FromArgb(CType(CType(155, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(83, Byte), Integer))
+        Me.btnProducts.OnPressedColor = System.Drawing.Color.FromArgb(CType(CType(155, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(83, Byte), Integer))
+        Me.btnProducts.Size = New System.Drawing.Size(334, 50)
+        Me.btnProducts.TabIndex = 4
+        Me.btnProducts.Text = "Product"
         '
         'btnSales
         '
@@ -352,6 +324,17 @@ Partial Class LandingPage
         Me.btnSales.TabIndex = 2
         Me.btnSales.Text = "Sales"
         '
+        'GunaLabel1
+        '
+        Me.GunaLabel1.AutoSize = True
+        Me.GunaLabel1.Font = New System.Drawing.Font("Segoe UI Semibold", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GunaLabel1.Location = New System.Drawing.Point(80, 198)
+        Me.GunaLabel1.Name = "GunaLabel1"
+        Me.GunaLabel1.Size = New System.Drawing.Size(197, 30)
+        Me.GunaLabel1.TabIndex = 1
+        Me.GunaLabel1.Text = "Patche POS System"
+        Me.GunaLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'PictureBox1
         '
         Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
@@ -362,6 +345,23 @@ Partial Class LandingPage
         Me.PictureBox1.Size = New System.Drawing.Size(168, 166)
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
+        '
+        'Panel3
+        '
+        Me.Panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel3.Location = New System.Drawing.Point(4, 3)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(353, 266)
+        Me.Panel3.TabIndex = 3
+        '
+        'Panel2
+        '
+        Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel2.Location = New System.Drawing.Point(361, 0)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(1559, 1080)
+        Me.Panel2.TabIndex = 4
         '
         'LandingPage
         '
@@ -395,6 +395,6 @@ Partial Class LandingPage
     Friend WithEvents GunaAdvenceButton4 As Guna.UI.WinForms.GunaAdvenceButton
     Friend WithEvents GunaAdvenceButton3 As Guna.UI.WinForms.GunaAdvenceButton
     Friend WithEvents btnCategory As Guna.UI.WinForms.GunaAdvenceButton
-    Friend WithEvents GunaAdvenceButton1 As Guna.UI.WinForms.GunaAdvenceButton
+    Friend WithEvents btnProducts As Guna.UI.WinForms.GunaAdvenceButton
     Friend WithEvents Panel2 As Panel
 End Class

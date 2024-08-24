@@ -54,4 +54,13 @@ Public Class FormClassificationEntry
         End Try
     End Sub
 
+    Private Sub FormClassificationEntry_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.KeyPreview = True
+    End Sub
+
+    Private Sub FormClassificationEntry_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            btnSaveCat_Click(sender, e)
+        End If
+    End Sub
 End Class

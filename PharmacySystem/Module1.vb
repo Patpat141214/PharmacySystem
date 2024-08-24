@@ -7,7 +7,7 @@ Module Module1
     Sub MyConnection()
         conn = New SqlConnection
         With conn
-            .ConnectionString = "Data Source=WIN-OLQG14FG7DN\SQLEXPRESS;Initial Catalog=PHARMACY_SYSTEM;Integrated Security=True;Encrypt=False"
+            .ConnectionString = "Data Source=DESKTOP-UPFHL7C\SQLEXPRESS;Initial Catalog=PHARMACY_SYSTEM;Integrated Security=True;Encrypt=False"
         End With
     End Sub
 

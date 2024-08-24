@@ -1,5 +1,7 @@
 ﻿Imports System.Data.SqlClient
+
 Public Class FormBrandEntry
+
     Private Sub btnCloseForm_Click(sender As Object, e As EventArgs) Handles btnCloseForm.Click
         Me.Dispose()
     End Sub
@@ -52,4 +54,13 @@ Public Class FormBrandEntry
         End Try
     End Sub
 
+    Private Sub FormBrandEntry_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            btnSaveBrand_Click(sender, e)
+        End If
+    End Sub
+
+    Private Sub FormBrandEntry_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.KeyPreview = True
+    End Sub
 End Class
