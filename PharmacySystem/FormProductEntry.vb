@@ -5,11 +5,48 @@ Public Class FormProductEntry
     End Sub
 
     Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
-
+        ClearAll()
+        txtBarcode.Focus()
     End Sub
 
+    Sub ClearAll()
+        txtBarcode.Clear()
+        txtBrand.Clear()
+        txtGeneric.Clear()
+        txtFormulation.Clear()
+        txtReorder.Clear()
+        txtQty.Clear()
+        txtType.Clear()
+        txtClassification.Clear()
+        txtPrice.Clear()
+    End Sub
     Private Sub btnSaveProduct_Click(sender As Object, e As EventArgs) Handles btnSaveProduct.Click
-
+        Try
+            If (MsgBox("Do you want to save this product?", vbYesNo + vbQuestion) = vbYes) Then
+                conn.Open()
+                cm = New SqlCommand("insert into tblProduct(barcode, bid, gid, cid, tid, fid, reorder, qty, price)values(@barcode, @bid, @gid, @cid, @tid, @fid, @reorder, @qty, @price)", conn)
+                cm.Parameters.AddWithValue("@barcode", txtBarcode.Text)
+                cm.Parameters.AddWithValue("@bid", CInt(lblIDBrand.Text))
+                cm.Parameters.AddWithValue("@gid", CInt(lblIDGeneric.Text))
+                cm.Parameters.AddWithValue("@cid", CInt(lblIDClass.Text))
+                cm.Parameters.AddWithValue("@tid", CInt(lblIDType.Text))
+                cm.Parameters.AddWithValue("@fid", CInt(lblIDForm.Text))
+                cm.Parameters.AddWithValue("@reorder", CInt(txtReorder.Text))
+                cm.Parameters.AddWithValue("@qty", CInt(txtQty.Text))
+                cm.Parameters.AddWithValue("@price", CDec(txtPrice.Text))
+                cm.ExecuteNonQuery()
+                conn.Close()
+                MsgBox("Product Successfully Saved!", vbInformation)
+                ClearAll()
+                With FormProductsList
+                    .loadProducts()
+                End With
+            End If
+            txtBarcode.Focus()
+        Catch ex As Exception
+            conn.Close()
+            MsgBox(ex.Message, vbCritical)
+        End Try
     End Sub
 
     Sub loadBrand()
@@ -162,5 +199,9 @@ Public Class FormProductEntry
         cm = Nothing
         conn.Close()
         dr.Close()
+    End Sub
+
+    Private Sub FormProductEntry_Shown(sender As Object, e As EventArgs) Handles MyBase.Shown
+        txtBarcode.Focus()
     End Sub
 End Class

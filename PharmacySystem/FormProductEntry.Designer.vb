@@ -39,6 +39,8 @@ Partial Class FormProductEntry
         Me.lblIDClass = New System.Windows.Forms.Label()
         Me.lblIDType = New System.Windows.Forms.Label()
         Me.lblIDForm = New System.Windows.Forms.Label()
+        Me.txtPrice = New MetroFramework.Controls.MetroTextBox()
+        Me.txtQty = New MetroFramework.Controls.MetroTextBox()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -353,7 +355,7 @@ Partial Class FormProductEntry
         Me.btnClear.Image = Nothing
         Me.btnClear.ImageSize = New System.Drawing.Size(20, 20)
         Me.btnClear.LineColor = System.Drawing.Color.DarkGray
-        Me.btnClear.Location = New System.Drawing.Point(312, 332)
+        Me.btnClear.Location = New System.Drawing.Point(308, 392)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.OnHoverBaseColor = System.Drawing.Color.DarkGray
         Me.btnClear.OnHoverBorderColor = System.Drawing.Color.DarkGray
@@ -385,7 +387,7 @@ Partial Class FormProductEntry
         Me.btnSaveProduct.Image = Nothing
         Me.btnSaveProduct.ImageSize = New System.Drawing.Size(20, 20)
         Me.btnSaveProduct.LineColor = System.Drawing.Color.DarkGray
-        Me.btnSaveProduct.Location = New System.Drawing.Point(193, 332)
+        Me.btnSaveProduct.Location = New System.Drawing.Point(189, 392)
         Me.btnSaveProduct.Name = "btnSaveProduct"
         Me.btnSaveProduct.OnHoverBaseColor = System.Drawing.Color.DarkGray
         Me.btnSaveProduct.OnHoverBorderColor = System.Drawing.Color.DarkGray
@@ -443,13 +445,83 @@ Partial Class FormProductEntry
         Me.lblIDForm.Size = New System.Drawing.Size(15, 21)
         Me.lblIDForm.TabIndex = 26
         '
+        'txtPrice
+        '
+        '
+        '
+        '
+        Me.txtPrice.CustomButton.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPrice.CustomButton.Image = Nothing
+        Me.txtPrice.CustomButton.Location = New System.Drawing.Point(534, 1)
+        Me.txtPrice.CustomButton.Name = ""
+        Me.txtPrice.CustomButton.Size = New System.Drawing.Size(27, 27)
+        Me.txtPrice.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
+        Me.txtPrice.CustomButton.TabIndex = 1
+        Me.txtPrice.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
+        Me.txtPrice.CustomButton.UseSelectable = True
+        Me.txtPrice.CustomButton.Visible = False
+        Me.txtPrice.FontSize = MetroFramework.MetroTextBoxSize.Medium
+        Me.txtPrice.Lines = New String(-1) {}
+        Me.txtPrice.Location = New System.Drawing.Point(13, 322)
+        Me.txtPrice.MaxLength = 32767
+        Me.txtPrice.Name = "txtPrice"
+        Me.txtPrice.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtPrice.PromptText = "Price"
+        Me.txtPrice.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.txtPrice.SelectedText = ""
+        Me.txtPrice.SelectionLength = 0
+        Me.txtPrice.SelectionStart = 0
+        Me.txtPrice.ShortcutsEnabled = True
+        Me.txtPrice.Size = New System.Drawing.Size(562, 29)
+        Me.txtPrice.TabIndex = 27
+        Me.txtPrice.UseSelectable = True
+        Me.txtPrice.WaterMark = "Price"
+        Me.txtPrice.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        Me.txtPrice.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        '
+        'txtQty
+        '
+        '
+        '
+        '
+        Me.txtQty.CustomButton.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtQty.CustomButton.Image = Nothing
+        Me.txtQty.CustomButton.Location = New System.Drawing.Point(534, 1)
+        Me.txtQty.CustomButton.Name = ""
+        Me.txtQty.CustomButton.Size = New System.Drawing.Size(27, 27)
+        Me.txtQty.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
+        Me.txtQty.CustomButton.TabIndex = 1
+        Me.txtQty.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
+        Me.txtQty.CustomButton.UseSelectable = True
+        Me.txtQty.CustomButton.Visible = False
+        Me.txtQty.FontSize = MetroFramework.MetroTextBoxSize.Medium
+        Me.txtQty.Lines = New String(-1) {}
+        Me.txtQty.Location = New System.Drawing.Point(13, 357)
+        Me.txtQty.MaxLength = 32767
+        Me.txtQty.Name = "txtQty"
+        Me.txtQty.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtQty.PromptText = "Initial Qty"
+        Me.txtQty.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.txtQty.SelectedText = ""
+        Me.txtQty.SelectionLength = 0
+        Me.txtQty.SelectionStart = 0
+        Me.txtQty.ShortcutsEnabled = True
+        Me.txtQty.Size = New System.Drawing.Size(562, 29)
+        Me.txtQty.TabIndex = 28
+        Me.txtQty.UseSelectable = True
+        Me.txtQty.WaterMark = "Initial Qty"
+        Me.txtQty.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        Me.txtQty.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        '
         'FormProductEntry
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 21.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(588, 389)
+        Me.ClientSize = New System.Drawing.Size(588, 443)
         Me.ControlBox = False
+        Me.Controls.Add(Me.txtQty)
+        Me.Controls.Add(Me.txtPrice)
         Me.Controls.Add(Me.lblIDForm)
         Me.Controls.Add(Me.lblIDType)
         Me.Controls.Add(Me.lblIDClass)
@@ -493,4 +565,6 @@ Partial Class FormProductEntry
     Friend WithEvents lblIDClass As Label
     Friend WithEvents lblIDType As Label
     Friend WithEvents lblIDForm As Label
+    Friend WithEvents txtPrice As MetroFramework.Controls.MetroTextBox
+    Friend WithEvents txtQty As MetroFramework.Controls.MetroTextBox
 End Class

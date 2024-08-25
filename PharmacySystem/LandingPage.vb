@@ -25,6 +25,7 @@
 			.TopLevel = False
 			Panel2.Controls.Add(FormProductsList)
 			.BringToFront()
+			.loadProducts()
 			.Show()
 		End With
 	End Sub
