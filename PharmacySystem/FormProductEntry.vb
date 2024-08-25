@@ -6,24 +6,44 @@ Public Class FormProductEntry
 
     Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
         ClearAll()
-        txtBarcode.Focus()
+
     End Sub
 
     Sub ClearAll()
         txtBarcode.Clear()
-        txtBrand.Clear()
-        txtGeneric.Clear()
-        txtFormulation.Clear()
+        txtBrand.Text = Nothing
         txtReorder.Clear()
         txtQty.Clear()
-        txtType.Clear()
-        txtClassification.Clear()
+        txtFormulation.Text = Nothing
+        txtType.Text = Nothing
+        txtGeneric.Text = Nothing
+        txtClassification.Text = Nothing
         txtPrice.Clear()
+        txtBarcode.Focus()
     End Sub
     Private Sub btnSaveProduct_Click(sender As Object, e As EventArgs) Handles btnSaveProduct.Click
         Try
+
+            If String.IsNullOrWhiteSpace(txtBarcode.Text) Or String.IsNullOrWhiteSpace(txtBrand.Text) Or String.IsNullOrWhiteSpace(txtClassification.Text) Or String.IsNullOrWhiteSpace(txtType.Text) Or
+                String.IsNullOrWhiteSpace(txtFormulation.Text) Or String.IsNullOrWhiteSpace(txtGeneric.Text) Or String.IsNullOrWhiteSpace(txtReorder.Text) Or String.IsNullOrWhiteSpace(txtPrice.Text) Or
+               String.IsNullOrWhiteSpace(txtQty.Text) Then
+                MsgBox("Required Empty Field!", vbExclamation)
+                txtBarcode.Focus()
+                Return
+            End If
+
             If (MsgBox("Do you want to save this product?", vbYesNo + vbQuestion) = vbYes) Then
                 conn.Open()
+                Dim cm As New SqlCommand("SELECT COUNT (*) FROM tblProduct WHERE barcode = @bar", conn)
+                cm.Parameters.AddWithValue("@bar", txtBarcode.Text.Trim())
+                Dim count As Integer = CInt(cm.ExecuteScalar())
+
+                If count > 0 Then
+                    MessageBox.Show("Duplication Entry!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                    conn.Close()
+                    txtBrand.Focus()
+                    Return
+                End If
                 cm = New SqlCommand("insert into tblProduct(barcode, bid, gid, cid, tid, fid, reorder, qty, price)values(@barcode, @bid, @gid, @cid, @tid, @fid, @reorder, @qty, @price)", conn)
                 cm.Parameters.AddWithValue("@barcode", txtBarcode.Text)
                 cm.Parameters.AddWithValue("@bid", CInt(lblIDBrand.Text))
@@ -50,86 +70,61 @@ Public Class FormProductEntry
     End Sub
 
     Sub loadBrand()
+        txtBrand.Items.Clear()
         conn.Open()
         cm = New SqlCommand("select * from tblBrand order by brand ASC", conn)
-        Dim ds As New DataSet
-        Dim da As New SqlDataAdapter(cm)
-        da.Fill(ds, "brand")
-        Dim col As New AutoCompleteStringCollection
-        For i As Integer = 0 To ds.Tables(0).Rows.Count - 1
-            col.Add(ds.Tables(0).Rows(i)("brand").ToString)
-        Next
-        txtBrand.AutoCompleteSource = AutoCompleteSource.CustomSource
-        txtBrand.AutoCompleteCustomSource = col
-        txtBrand.AutoCompleteMode = AutoCompleteMode.Suggest
-        cm = Nothing
+        dr = cm.ExecuteReader()
+        While (dr.Read())
+            txtBrand.Items.Add(dr("brand").ToString())
+        End While
+        dr.Close()
         conn.Close()
     End Sub
     Sub loadGeneric()
+        txtGeneric.Items.Clear()
         conn.Open()
         cm = New SqlCommand("select * from tblGeneric order by generic ASC", conn)
-        Dim ds As New DataSet
-        Dim da As New SqlDataAdapter(cm)
-        da.Fill(ds, "generic")
-        Dim col As New AutoCompleteStringCollection
-        For i As Integer = 0 To ds.Tables(0).Rows.Count - 1
-            col.Add(ds.Tables(0).Rows(i)("generic").ToString)
-        Next
-        txtGeneric.AutoCompleteSource = AutoCompleteSource.CustomSource
-        txtGeneric.AutoCompleteCustomSource = col
-        txtGeneric.AutoCompleteMode = AutoCompleteMode.Suggest
-        cm = Nothing
+        dr = cm.ExecuteReader()
+        While (dr.Read())
+            txtGeneric.Items.Add(dr("generic").ToString())
+        End While
+        dr.Close()
         conn.Close()
     End Sub
 
     Sub loadClassification()
+        txtClassification.Items.Clear()
         conn.Open()
         cm = New SqlCommand("select * from tblClassification order by classification ASC", conn)
-        Dim ds As New DataSet
-        Dim da As New SqlDataAdapter(cm)
-        da.Fill(ds, "classification")
-        Dim col As New AutoCompleteStringCollection
-        For i As Integer = 0 To ds.Tables(0).Rows.Count - 1
-            col.Add(ds.Tables(0).Rows(i)("classification").ToString)
-        Next
-        txtClassification.AutoCompleteSource = AutoCompleteSource.CustomSource
-        txtClassification.AutoCompleteCustomSource = col
-        txtClassification.AutoCompleteMode = AutoCompleteMode.Suggest
-        cm = Nothing
+        dr = cm.ExecuteReader()
+        While (dr.Read())
+            txtClassification.Items.Add(dr("classification").ToString())
+        End While
+        dr.Close()
         conn.Close()
     End Sub
 
     Sub loadType()
+        txtType.Items.Clear()
         conn.Open()
         cm = New SqlCommand("select * from tblType order by type ASC", conn)
-        Dim ds As New DataSet
-        Dim da As New SqlDataAdapter(cm)
-        da.Fill(ds, "type")
-        Dim col As New AutoCompleteStringCollection
-        For i As Integer = 0 To ds.Tables(0).Rows.Count - 1
-            col.Add(ds.Tables(0).Rows(i)("type").ToString)
-        Next
-        txtType.AutoCompleteSource = AutoCompleteSource.CustomSource
-        txtType.AutoCompleteCustomSource = col
-        txtType.AutoCompleteMode = AutoCompleteMode.Suggest
-        cm = Nothing
+        dr = cm.ExecuteReader()
+        While (dr.Read())
+            txtType.Items.Add(dr("type").ToString())
+        End While
+        dr.Close()
         conn.Close()
     End Sub
 
     Sub loadFormulation()
+        txtFormulation.Items.Clear()
         conn.Open()
         cm = New SqlCommand("select * from tblFormulation order by formulation ASC", conn)
-        Dim ds As New DataSet
-        Dim da As New SqlDataAdapter(cm)
-        da.Fill(ds, "formulation")
-        Dim col As New AutoCompleteStringCollection
-        For i As Integer = 0 To ds.Tables(0).Rows.Count - 1
-            col.Add(ds.Tables(0).Rows(i)("formulation").ToString)
-        Next
-        txtFormulation.AutoCompleteSource = AutoCompleteSource.CustomSource
-        txtFormulation.AutoCompleteCustomSource = col
-        txtFormulation.AutoCompleteMode = AutoCompleteMode.Suggest
-        cm = Nothing
+        dr = cm.ExecuteReader()
+        While (dr.Read())
+            txtFormulation.Items.Add(dr("formulation").ToString())
+        End While
+        dr.Close()
         conn.Close()
     End Sub
 
@@ -139,6 +134,10 @@ Public Class FormProductEntry
         loadClassification()
         loadType()
         loadFormulation()
+    End Sub
+
+    Private Sub FormProductEntry_Shown(sender As Object, e As EventArgs) Handles MyBase.Shown
+        txtBarcode.Focus()
     End Sub
 
     Private Sub txtBrand_TextChanged(sender As Object, e As EventArgs) Handles txtBrand.TextChanged
@@ -199,9 +198,5 @@ Public Class FormProductEntry
         cm = Nothing
         conn.Close()
         dr.Close()
-    End Sub
-
-    Private Sub FormProductEntry_Shown(sender As Object, e As EventArgs) Handles MyBase.Shown
-        txtBarcode.Focus()
     End Sub
 End Class

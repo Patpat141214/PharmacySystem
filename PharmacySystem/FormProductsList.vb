@@ -36,4 +36,52 @@ Public Class FormProductsList
     Private Sub btnRefresh_Click(sender As Object, e As EventArgs) Handles btnRefresh.Click
         loadProducts()
     End Sub
+
+    Private Sub gunaGridProducts_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles gunaGridProducts.CellContentClick
+        Dim colname As String = gunaGridProducts.Columns(e.ColumnIndex).Name
+        Dim _id As String = gunaGridProducts.Rows(e.RowIndex).Cells(1).Value.ToString
+        Dim _bar As String = gunaGridProducts.Rows(e.RowIndex).Cells(2).Value.ToString
+        Dim _brand As String = gunaGridProducts.Rows(e.RowIndex).Cells(3).Value.ToString
+        Dim _generic As String = gunaGridProducts.Rows(e.RowIndex).Cells(4).Value.ToString
+        Dim _class As String = gunaGridProducts.Rows(e.RowIndex).Cells(5).Value.ToString
+        Dim _type As String = gunaGridProducts.Rows(e.RowIndex).Cells(6).Value.ToString
+        Dim _form As String = gunaGridProducts.Rows(e.RowIndex).Cells(7).Value.ToString
+        Dim _reorder As String = gunaGridProducts.Rows(e.RowIndex).Cells(8).Value.ToString
+        Dim _qty As String = gunaGridProducts.Rows(e.RowIndex).Cells(9).Value.ToString
+        Dim _price As String = gunaGridProducts.Rows(e.RowIndex).Cells(10).Value.ToString
+        If colname = "Edit" Then
+            With FormProductUpdate
+                .txtBarcode.Text = _bar
+                .txtBrand.Text = _brand
+                .txtGeneric.Text = _generic
+                .txtClassification.Text = _class
+                .txtType.Text = _type
+                .txtFormulation.Text = _form
+                .txtReorder.Text = _reorder
+                .txtQty.Text = _qty
+                .txtPrice.Text = _price
+                .barcode = _bar
+                .brand = _brand
+                .generic = _generic
+                .formulation = _form
+                .type = _type
+                .classicfication = _class
+                .id = _id
+                .reorder = _reorder
+                .qty = _qty
+                .price = _price
+                .ShowDialog()
+            End With
+        ElseIf colname = "Delete" Then
+            If (MsgBox("Are you sure you want to delete this product?", vbYesNo + vbQuestion) = vbYes) Then
+                conn.Open()
+                cm = New SqlCommand("delete from tblProduct where id = @id", conn)
+                cm.Parameters.AddWithValue("@id", _id)
+                cm.ExecuteNonQuery()
+                conn.Close()
+                MsgBox("Product successfully deleted!", vbInformation)
+                loadProducts()
+            End If
+        End If
+    End Sub
 End Class
