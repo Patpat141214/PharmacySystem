@@ -247,6 +247,7 @@ Partial Class FormProductEntry
         Me.lblIDBrand.Name = "lblIDBrand"
         Me.lblIDBrand.Size = New System.Drawing.Size(20, 21)
         Me.lblIDBrand.TabIndex = 22
+        Me.lblIDBrand.Visible = False
         '
         'lblIDGeneric
         '
@@ -256,6 +257,7 @@ Partial Class FormProductEntry
         Me.lblIDGeneric.Name = "lblIDGeneric"
         Me.lblIDGeneric.Size = New System.Drawing.Size(20, 21)
         Me.lblIDGeneric.TabIndex = 23
+        Me.lblIDGeneric.Visible = False
         '
         'lblIDClass
         '
@@ -265,6 +267,7 @@ Partial Class FormProductEntry
         Me.lblIDClass.Name = "lblIDClass"
         Me.lblIDClass.Size = New System.Drawing.Size(20, 21)
         Me.lblIDClass.TabIndex = 24
+        Me.lblIDClass.Visible = False
         '
         'lblIDType
         '
@@ -274,6 +277,7 @@ Partial Class FormProductEntry
         Me.lblIDType.Name = "lblIDType"
         Me.lblIDType.Size = New System.Drawing.Size(20, 21)
         Me.lblIDType.TabIndex = 25
+        Me.lblIDType.Visible = False
         '
         'lblIDForm
         '
@@ -283,6 +287,7 @@ Partial Class FormProductEntry
         Me.lblIDForm.Name = "lblIDForm"
         Me.lblIDForm.Size = New System.Drawing.Size(19, 21)
         Me.lblIDForm.TabIndex = 26
+        Me.lblIDForm.Visible = False
         '
         'txtPrice
         '
@@ -376,7 +381,6 @@ Partial Class FormProductEntry
         '
         'txtBrand
         '
-        Me.txtBrand.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.txtBrand.FormattingEnabled = True
         Me.txtBrand.Location = New System.Drawing.Point(12, 146)
         Me.txtBrand.Name = "txtBrand"
@@ -396,7 +400,6 @@ Partial Class FormProductEntry
         '
         'txtGeneric
         '
-        Me.txtGeneric.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.txtGeneric.FormattingEnabled = True
         Me.txtGeneric.Location = New System.Drawing.Point(12, 210)
         Me.txtGeneric.Name = "txtGeneric"
@@ -405,7 +408,6 @@ Partial Class FormProductEntry
         '
         'txtClassification
         '
-        Me.txtClassification.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.txtClassification.FormattingEnabled = True
         Me.txtClassification.Location = New System.Drawing.Point(12, 273)
         Me.txtClassification.Name = "txtClassification"
@@ -425,7 +427,6 @@ Partial Class FormProductEntry
         '
         'txtType
         '
-        Me.txtType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.txtType.FormattingEnabled = True
         Me.txtType.Location = New System.Drawing.Point(12, 338)
         Me.txtType.Name = "txtType"
@@ -445,7 +446,6 @@ Partial Class FormProductEntry
         '
         'txtFormulation
         '
-        Me.txtFormulation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.txtFormulation.FormattingEnabled = True
         Me.txtFormulation.Location = New System.Drawing.Point(12, 401)
         Me.txtFormulation.Name = "txtFormulation"

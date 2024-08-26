@@ -199,4 +199,42 @@ Public Class FormProductEntry
         conn.Close()
         dr.Close()
     End Sub
+
+    Private Sub txtPrice_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtPrice.KeyPress
+        If Not Char.IsControl(e.KeyChar) AndAlso Not Char.IsDigit(e.KeyChar) Then
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub txtQty_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtQty.KeyPress
+        If Not Char.IsControl(e.KeyChar) AndAlso Not Char.IsDigit(e.KeyChar) Then
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub txtReorder_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtReorder.KeyPress
+        If Not Char.IsControl(e.KeyChar) AndAlso Not Char.IsDigit(e.KeyChar) Then
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub txtBrand_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtBrand.KeyPress
+        e.Handled = True
+    End Sub
+
+    Private Sub txtClassification_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtClassification.KeyPress
+        e.Handled = True
+    End Sub
+
+    Private Sub txtFormulation_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtFormulation.KeyPress
+        e.Handled = True
+    End Sub
+
+    Private Sub txtGeneric_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtGeneric.KeyPress
+        e.Handled = True
+    End Sub
+
+    Private Sub txtType_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtType.KeyPress
+        e.Handled = True
+    End Sub
 End Class

@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FormProductUpdate
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,11 +20,25 @@ Partial Class FormProductUpdate
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.btnCloseForm = New Guna.UI.WinForms.GunaAdvenceButton()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.txtFormulation = New System.Windows.Forms.ComboBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.txtType = New System.Windows.Forms.ComboBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.txtClassification = New System.Windows.Forms.ComboBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.txtGeneric = New System.Windows.Forms.ComboBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.txtBrand = New System.Windows.Forms.ComboBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.txtQty = New MetroFramework.Controls.MetroTextBox()
         Me.txtPrice = New MetroFramework.Controls.MetroTextBox()
         Me.lblIDForm = New System.Windows.Forms.Label()
@@ -35,12 +49,7 @@ Partial Class FormProductUpdate
         Me.btnRevert = New Guna.UI.WinForms.GunaAdvenceButton()
         Me.btnUpdateProduct = New Guna.UI.WinForms.GunaAdvenceButton()
         Me.txtReorder = New MetroFramework.Controls.MetroTextBox()
-        Me.txtFormulation = New MetroFramework.Controls.MetroTextBox()
-        Me.txtType = New MetroFramework.Controls.MetroTextBox()
-        Me.txtClassification = New MetroFramework.Controls.MetroTextBox()
-        Me.txtGeneric = New MetroFramework.Controls.MetroTextBox()
         Me.txtBarcode = New MetroFramework.Controls.MetroTextBox()
-        Me.txtBrand = New MetroFramework.Controls.MetroTextBox()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -98,6 +107,145 @@ Partial Class FormProductUpdate
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Update Product"
         '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(11, 573)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(35, 21)
+        Me.Label10.TabIndex = 67
+        Me.Label10.Text = "Qty"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(11, 512)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(44, 21)
+        Me.Label9.TabIndex = 66
+        Me.Label9.Text = "Price"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(9, 450)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(75, 21)
+        Me.Label8.TabIndex = 65
+        Me.Label8.Text = "Re-Order"
+        '
+        'txtFormulation
+        '
+        Me.txtFormulation.FormattingEnabled = True
+        Me.txtFormulation.Location = New System.Drawing.Point(13, 412)
+        Me.txtFormulation.Name = "txtFormulation"
+        Me.txtFormulation.Size = New System.Drawing.Size(562, 29)
+        Me.txtFormulation.TabIndex = 64
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(11, 388)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(95, 21)
+        Me.Label7.TabIndex = 63
+        Me.Label7.Text = "Formulation"
+        '
+        'txtType
+        '
+        Me.txtType.FormattingEnabled = True
+        Me.txtType.Location = New System.Drawing.Point(13, 349)
+        Me.txtType.Name = "txtType"
+        Me.txtType.Size = New System.Drawing.Size(562, 29)
+        Me.txtType.TabIndex = 62
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(11, 325)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(42, 21)
+        Me.Label6.TabIndex = 61
+        Me.Label6.Text = "Type"
+        '
+        'txtClassification
+        '
+        Me.txtClassification.FormattingEnabled = True
+        Me.txtClassification.Location = New System.Drawing.Point(13, 284)
+        Me.txtClassification.Name = "txtClassification"
+        Me.txtClassification.Size = New System.Drawing.Size(562, 29)
+        Me.txtClassification.TabIndex = 60
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(11, 260)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(101, 21)
+        Me.Label5.TabIndex = 59
+        Me.Label5.Text = "Classification"
+        '
+        'txtGeneric
+        '
+        Me.txtGeneric.FormattingEnabled = True
+        Me.txtGeneric.Location = New System.Drawing.Point(13, 221)
+        Me.txtGeneric.Name = "txtGeneric"
+        Me.txtGeneric.Size = New System.Drawing.Size(562, 29)
+        Me.txtGeneric.TabIndex = 58
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(10, 197)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(63, 21)
+        Me.Label4.TabIndex = 57
+        Me.Label4.Text = "Generic"
+        '
+        'txtBrand
+        '
+        Me.txtBrand.FormattingEnabled = True
+        Me.txtBrand.Location = New System.Drawing.Point(13, 157)
+        Me.txtBrand.Name = "txtBrand"
+        Me.txtBrand.Size = New System.Drawing.Size(562, 29)
+        Me.txtBrand.TabIndex = 56
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(9, 133)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(51, 21)
+        Me.Label3.TabIndex = 55
+        Me.Label3.Text = "Brand"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(9, 70)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(66, 21)
+        Me.Label2.TabIndex = 54
+        Me.Label2.Text = "Barcode"
+        '
         'txtQty
         '
         '
@@ -115,7 +263,7 @@ Partial Class FormProductUpdate
         Me.txtQty.CustomButton.Visible = False
         Me.txtQty.FontSize = MetroFramework.MetroTextBoxSize.Medium
         Me.txtQty.Lines = New String(-1) {}
-        Me.txtQty.Location = New System.Drawing.Point(12, 408)
+        Me.txtQty.Location = New System.Drawing.Point(13, 597)
         Me.txtQty.MaxLength = 32767
         Me.txtQty.Name = "txtQty"
         Me.txtQty.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -126,7 +274,7 @@ Partial Class FormProductUpdate
         Me.txtQty.SelectionStart = 0
         Me.txtQty.ShortcutsEnabled = True
         Me.txtQty.Size = New System.Drawing.Size(562, 29)
-        Me.txtQty.TabIndex = 44
+        Me.txtQty.TabIndex = 53
         Me.txtQty.UseSelectable = True
         Me.txtQty.WaterMark = "Initial Qty"
         Me.txtQty.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
@@ -149,7 +297,7 @@ Partial Class FormProductUpdate
         Me.txtPrice.CustomButton.Visible = False
         Me.txtPrice.FontSize = MetroFramework.MetroTextBoxSize.Medium
         Me.txtPrice.Lines = New String(-1) {}
-        Me.txtPrice.Location = New System.Drawing.Point(12, 373)
+        Me.txtPrice.Location = New System.Drawing.Point(13, 536)
         Me.txtPrice.MaxLength = 32767
         Me.txtPrice.Name = "txtPrice"
         Me.txtPrice.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -160,7 +308,7 @@ Partial Class FormProductUpdate
         Me.txtPrice.SelectionStart = 0
         Me.txtPrice.ShortcutsEnabled = True
         Me.txtPrice.Size = New System.Drawing.Size(562, 29)
-        Me.txtPrice.TabIndex = 43
+        Me.txtPrice.TabIndex = 52
         Me.txtPrice.UseSelectable = True
         Me.txtPrice.WaterMark = "Price"
         Me.txtPrice.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
@@ -169,47 +317,52 @@ Partial Class FormProductUpdate
         'lblIDForm
         '
         Me.lblIDForm.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblIDForm.Location = New System.Drawing.Point(573, 252)
+        Me.lblIDForm.Location = New System.Drawing.Point(575, 418)
         Me.lblIDForm.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblIDForm.Name = "lblIDForm"
-        Me.lblIDForm.Size = New System.Drawing.Size(15, 21)
-        Me.lblIDForm.TabIndex = 42
+        Me.lblIDForm.Size = New System.Drawing.Size(19, 21)
+        Me.lblIDForm.TabIndex = 51
+        Me.lblIDForm.Visible = False
         '
         'lblIDType
         '
         Me.lblIDType.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblIDType.Location = New System.Drawing.Point(573, 217)
+        Me.lblIDType.Location = New System.Drawing.Point(574, 353)
         Me.lblIDType.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblIDType.Name = "lblIDType"
-        Me.lblIDType.Size = New System.Drawing.Size(15, 21)
-        Me.lblIDType.TabIndex = 41
+        Me.lblIDType.Size = New System.Drawing.Size(20, 21)
+        Me.lblIDType.TabIndex = 50
+        Me.lblIDType.Visible = False
         '
         'lblIDClass
         '
         Me.lblIDClass.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblIDClass.Location = New System.Drawing.Point(573, 181)
+        Me.lblIDClass.Location = New System.Drawing.Point(574, 287)
         Me.lblIDClass.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblIDClass.Name = "lblIDClass"
-        Me.lblIDClass.Size = New System.Drawing.Size(15, 21)
-        Me.lblIDClass.TabIndex = 40
+        Me.lblIDClass.Size = New System.Drawing.Size(20, 21)
+        Me.lblIDClass.TabIndex = 49
+        Me.lblIDClass.Visible = False
         '
         'lblIDGeneric
         '
         Me.lblIDGeneric.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblIDGeneric.Location = New System.Drawing.Point(573, 147)
+        Me.lblIDGeneric.Location = New System.Drawing.Point(574, 225)
         Me.lblIDGeneric.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblIDGeneric.Name = "lblIDGeneric"
-        Me.lblIDGeneric.Size = New System.Drawing.Size(15, 21)
-        Me.lblIDGeneric.TabIndex = 39
+        Me.lblIDGeneric.Size = New System.Drawing.Size(20, 21)
+        Me.lblIDGeneric.TabIndex = 48
+        Me.lblIDGeneric.Visible = False
         '
         'lblIDBrand
         '
         Me.lblIDBrand.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblIDBrand.Location = New System.Drawing.Point(573, 113)
+        Me.lblIDBrand.Location = New System.Drawing.Point(574, 160)
         Me.lblIDBrand.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblIDBrand.Name = "lblIDBrand"
-        Me.lblIDBrand.Size = New System.Drawing.Size(15, 21)
-        Me.lblIDBrand.TabIndex = 38
+        Me.lblIDBrand.Size = New System.Drawing.Size(20, 21)
+        Me.lblIDBrand.TabIndex = 47
+        Me.lblIDBrand.Visible = False
         '
         'btnRevert
         '
@@ -230,7 +383,7 @@ Partial Class FormProductUpdate
         Me.btnRevert.Image = Nothing
         Me.btnRevert.ImageSize = New System.Drawing.Size(20, 20)
         Me.btnRevert.LineColor = System.Drawing.Color.DarkGray
-        Me.btnRevert.Location = New System.Drawing.Point(297, 592)
+        Me.btnRevert.Location = New System.Drawing.Point(300, 637)
         Me.btnRevert.Name = "btnRevert"
         Me.btnRevert.OnHoverBaseColor = System.Drawing.Color.DarkGray
         Me.btnRevert.OnHoverBorderColor = System.Drawing.Color.DarkGray
@@ -239,7 +392,7 @@ Partial Class FormProductUpdate
         Me.btnRevert.OnHoverLineColor = System.Drawing.Color.DarkGray
         Me.btnRevert.OnPressedColor = System.Drawing.Color.DarkGray
         Me.btnRevert.Size = New System.Drawing.Size(112, 41)
-        Me.btnRevert.TabIndex = 37
+        Me.btnRevert.TabIndex = 46
         Me.btnRevert.Text = "Revert"
         Me.btnRevert.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -262,7 +415,7 @@ Partial Class FormProductUpdate
         Me.btnUpdateProduct.Image = Nothing
         Me.btnUpdateProduct.ImageSize = New System.Drawing.Size(20, 20)
         Me.btnUpdateProduct.LineColor = System.Drawing.Color.DarkGray
-        Me.btnUpdateProduct.Location = New System.Drawing.Point(178, 592)
+        Me.btnUpdateProduct.Location = New System.Drawing.Point(181, 637)
         Me.btnUpdateProduct.Name = "btnUpdateProduct"
         Me.btnUpdateProduct.OnHoverBaseColor = System.Drawing.Color.DarkGray
         Me.btnUpdateProduct.OnHoverBorderColor = System.Drawing.Color.DarkGray
@@ -271,7 +424,7 @@ Partial Class FormProductUpdate
         Me.btnUpdateProduct.OnHoverLineColor = System.Drawing.Color.DarkGray
         Me.btnUpdateProduct.OnPressedColor = System.Drawing.Color.DarkGray
         Me.btnUpdateProduct.Size = New System.Drawing.Size(112, 41)
-        Me.btnUpdateProduct.TabIndex = 36
+        Me.btnUpdateProduct.TabIndex = 45
         Me.btnUpdateProduct.Text = "Update"
         Me.btnUpdateProduct.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -292,7 +445,7 @@ Partial Class FormProductUpdate
         Me.txtReorder.CustomButton.Visible = False
         Me.txtReorder.FontSize = MetroFramework.MetroTextBoxSize.Medium
         Me.txtReorder.Lines = New String(-1) {}
-        Me.txtReorder.Location = New System.Drawing.Point(12, 338)
+        Me.txtReorder.Location = New System.Drawing.Point(13, 474)
         Me.txtReorder.MaxLength = 32767
         Me.txtReorder.Name = "txtReorder"
         Me.txtReorder.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -303,147 +456,11 @@ Partial Class FormProductUpdate
         Me.txtReorder.SelectionStart = 0
         Me.txtReorder.ShortcutsEnabled = True
         Me.txtReorder.Size = New System.Drawing.Size(562, 29)
-        Me.txtReorder.TabIndex = 35
+        Me.txtReorder.TabIndex = 44
         Me.txtReorder.UseSelectable = True
         Me.txtReorder.WaterMark = "Re-Order Level"
         Me.txtReorder.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
         Me.txtReorder.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        '
-        'txtFormulation
-        '
-        '
-        '
-        '
-        Me.txtFormulation.CustomButton.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtFormulation.CustomButton.Image = Nothing
-        Me.txtFormulation.CustomButton.Location = New System.Drawing.Point(534, 1)
-        Me.txtFormulation.CustomButton.Name = ""
-        Me.txtFormulation.CustomButton.Size = New System.Drawing.Size(27, 27)
-        Me.txtFormulation.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
-        Me.txtFormulation.CustomButton.TabIndex = 1
-        Me.txtFormulation.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
-        Me.txtFormulation.CustomButton.UseSelectable = True
-        Me.txtFormulation.CustomButton.Visible = False
-        Me.txtFormulation.FontSize = MetroFramework.MetroTextBoxSize.Medium
-        Me.txtFormulation.Lines = New String(-1) {}
-        Me.txtFormulation.Location = New System.Drawing.Point(12, 303)
-        Me.txtFormulation.MaxLength = 32767
-        Me.txtFormulation.Name = "txtFormulation"
-        Me.txtFormulation.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txtFormulation.PromptText = "Formulation"
-        Me.txtFormulation.ScrollBars = System.Windows.Forms.ScrollBars.None
-        Me.txtFormulation.SelectedText = ""
-        Me.txtFormulation.SelectionLength = 0
-        Me.txtFormulation.SelectionStart = 0
-        Me.txtFormulation.ShortcutsEnabled = True
-        Me.txtFormulation.Size = New System.Drawing.Size(562, 29)
-        Me.txtFormulation.TabIndex = 34
-        Me.txtFormulation.UseSelectable = True
-        Me.txtFormulation.WaterMark = "Formulation"
-        Me.txtFormulation.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
-        Me.txtFormulation.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        '
-        'txtType
-        '
-        '
-        '
-        '
-        Me.txtType.CustomButton.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtType.CustomButton.Image = Nothing
-        Me.txtType.CustomButton.Location = New System.Drawing.Point(534, 1)
-        Me.txtType.CustomButton.Name = ""
-        Me.txtType.CustomButton.Size = New System.Drawing.Size(27, 27)
-        Me.txtType.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
-        Me.txtType.CustomButton.TabIndex = 1
-        Me.txtType.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
-        Me.txtType.CustomButton.UseSelectable = True
-        Me.txtType.CustomButton.Visible = False
-        Me.txtType.FontSize = MetroFramework.MetroTextBoxSize.Medium
-        Me.txtType.Lines = New String(-1) {}
-        Me.txtType.Location = New System.Drawing.Point(12, 268)
-        Me.txtType.MaxLength = 32767
-        Me.txtType.Name = "txtType"
-        Me.txtType.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txtType.PromptText = "Type"
-        Me.txtType.ScrollBars = System.Windows.Forms.ScrollBars.None
-        Me.txtType.SelectedText = ""
-        Me.txtType.SelectionLength = 0
-        Me.txtType.SelectionStart = 0
-        Me.txtType.ShortcutsEnabled = True
-        Me.txtType.Size = New System.Drawing.Size(562, 29)
-        Me.txtType.TabIndex = 33
-        Me.txtType.UseSelectable = True
-        Me.txtType.WaterMark = "Type"
-        Me.txtType.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
-        Me.txtType.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        '
-        'txtClassification
-        '
-        '
-        '
-        '
-        Me.txtClassification.CustomButton.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtClassification.CustomButton.Image = Nothing
-        Me.txtClassification.CustomButton.Location = New System.Drawing.Point(534, 1)
-        Me.txtClassification.CustomButton.Name = ""
-        Me.txtClassification.CustomButton.Size = New System.Drawing.Size(27, 27)
-        Me.txtClassification.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
-        Me.txtClassification.CustomButton.TabIndex = 1
-        Me.txtClassification.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
-        Me.txtClassification.CustomButton.UseSelectable = True
-        Me.txtClassification.CustomButton.Visible = False
-        Me.txtClassification.FontSize = MetroFramework.MetroTextBoxSize.Medium
-        Me.txtClassification.Lines = New String(-1) {}
-        Me.txtClassification.Location = New System.Drawing.Point(12, 233)
-        Me.txtClassification.MaxLength = 32767
-        Me.txtClassification.Name = "txtClassification"
-        Me.txtClassification.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txtClassification.PromptText = "Classification"
-        Me.txtClassification.ScrollBars = System.Windows.Forms.ScrollBars.None
-        Me.txtClassification.SelectedText = ""
-        Me.txtClassification.SelectionLength = 0
-        Me.txtClassification.SelectionStart = 0
-        Me.txtClassification.ShortcutsEnabled = True
-        Me.txtClassification.Size = New System.Drawing.Size(562, 29)
-        Me.txtClassification.TabIndex = 32
-        Me.txtClassification.UseSelectable = True
-        Me.txtClassification.WaterMark = "Classification"
-        Me.txtClassification.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
-        Me.txtClassification.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        '
-        'txtGeneric
-        '
-        '
-        '
-        '
-        Me.txtGeneric.CustomButton.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtGeneric.CustomButton.Image = Nothing
-        Me.txtGeneric.CustomButton.Location = New System.Drawing.Point(534, 1)
-        Me.txtGeneric.CustomButton.Name = ""
-        Me.txtGeneric.CustomButton.Size = New System.Drawing.Size(27, 27)
-        Me.txtGeneric.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
-        Me.txtGeneric.CustomButton.TabIndex = 1
-        Me.txtGeneric.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
-        Me.txtGeneric.CustomButton.UseSelectable = True
-        Me.txtGeneric.CustomButton.Visible = False
-        Me.txtGeneric.FontSize = MetroFramework.MetroTextBoxSize.Medium
-        Me.txtGeneric.Lines = New String(-1) {}
-        Me.txtGeneric.Location = New System.Drawing.Point(12, 198)
-        Me.txtGeneric.MaxLength = 32767
-        Me.txtGeneric.Name = "txtGeneric"
-        Me.txtGeneric.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txtGeneric.PromptText = "Generic Name"
-        Me.txtGeneric.ScrollBars = System.Windows.Forms.ScrollBars.None
-        Me.txtGeneric.SelectedText = ""
-        Me.txtGeneric.SelectionLength = 0
-        Me.txtGeneric.SelectionStart = 0
-        Me.txtGeneric.ShortcutsEnabled = True
-        Me.txtGeneric.Size = New System.Drawing.Size(562, 29)
-        Me.txtGeneric.TabIndex = 31
-        Me.txtGeneric.UseSelectable = True
-        Me.txtGeneric.WaterMark = "Generic Name"
-        Me.txtGeneric.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
-        Me.txtGeneric.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
         'txtBarcode
         '
@@ -462,7 +479,7 @@ Partial Class FormProductUpdate
         Me.txtBarcode.CustomButton.Visible = False
         Me.txtBarcode.FontSize = MetroFramework.MetroTextBoxSize.Medium
         Me.txtBarcode.Lines = New String(-1) {}
-        Me.txtBarcode.Location = New System.Drawing.Point(12, 100)
+        Me.txtBarcode.Location = New System.Drawing.Point(15, 94)
         Me.txtBarcode.MaxLength = 32767
         Me.txtBarcode.Name = "txtBarcode"
         Me.txtBarcode.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -473,53 +490,33 @@ Partial Class FormProductUpdate
         Me.txtBarcode.SelectionStart = 0
         Me.txtBarcode.ShortcutsEnabled = True
         Me.txtBarcode.Size = New System.Drawing.Size(562, 29)
-        Me.txtBarcode.TabIndex = 29
+        Me.txtBarcode.TabIndex = 43
         Me.txtBarcode.UseSelectable = True
         Me.txtBarcode.WaterMark = "Barcode"
         Me.txtBarcode.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
         Me.txtBarcode.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        '
-        'txtBrand
-        '
-        '
-        '
-        '
-        Me.txtBrand.CustomButton.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtBrand.CustomButton.Image = Nothing
-        Me.txtBrand.CustomButton.Location = New System.Drawing.Point(534, 1)
-        Me.txtBrand.CustomButton.Name = ""
-        Me.txtBrand.CustomButton.Size = New System.Drawing.Size(27, 27)
-        Me.txtBrand.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
-        Me.txtBrand.CustomButton.TabIndex = 1
-        Me.txtBrand.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
-        Me.txtBrand.CustomButton.UseSelectable = True
-        Me.txtBrand.CustomButton.Visible = False
-        Me.txtBrand.FontSize = MetroFramework.MetroTextBoxSize.Medium
-        Me.txtBrand.Lines = New String(-1) {}
-        Me.txtBrand.Location = New System.Drawing.Point(12, 163)
-        Me.txtBrand.MaxLength = 32767
-        Me.txtBrand.Name = "txtBrand"
-        Me.txtBrand.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txtBrand.PromptText = "Brand Name"
-        Me.txtBrand.ScrollBars = System.Windows.Forms.ScrollBars.None
-        Me.txtBrand.SelectedText = ""
-        Me.txtBrand.SelectionLength = 0
-        Me.txtBrand.SelectionStart = 0
-        Me.txtBrand.ShortcutsEnabled = True
-        Me.txtBrand.Size = New System.Drawing.Size(562, 29)
-        Me.txtBrand.TabIndex = 30
-        Me.txtBrand.UseSelectable = True
-        Me.txtBrand.WaterMark = "Brand Name"
-        Me.txtBrand.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
-        Me.txtBrand.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
         'FormProductUpdate
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 21.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(588, 645)
+        Me.ClientSize = New System.Drawing.Size(588, 688)
         Me.ControlBox = False
+        Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.Label9)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.txtFormulation)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.txtType)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.txtClassification)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.txtGeneric)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.txtBrand)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txtQty)
         Me.Controls.Add(Me.txtPrice)
         Me.Controls.Add(Me.lblIDForm)
@@ -530,11 +527,6 @@ Partial Class FormProductUpdate
         Me.Controls.Add(Me.btnRevert)
         Me.Controls.Add(Me.btnUpdateProduct)
         Me.Controls.Add(Me.txtReorder)
-        Me.Controls.Add(Me.txtFormulation)
-        Me.Controls.Add(Me.txtType)
-        Me.Controls.Add(Me.txtClassification)
-        Me.Controls.Add(Me.txtGeneric)
-        Me.Controls.Add(Me.txtBrand)
         Me.Controls.Add(Me.txtBarcode)
         Me.Controls.Add(Me.Panel1)
         Me.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -545,12 +537,27 @@ Partial Class FormProductUpdate
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents Panel1 As Panel
     Friend WithEvents btnCloseForm As Guna.UI.WinForms.GunaAdvenceButton
     Friend WithEvents Label1 As Label
+    Friend WithEvents Label10 As Label
+    Friend WithEvents Label9 As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents txtFormulation As ComboBox
+    Friend WithEvents Label7 As Label
+    Friend WithEvents txtType As ComboBox
+    Friend WithEvents Label6 As Label
+    Friend WithEvents txtClassification As ComboBox
+    Friend WithEvents Label5 As Label
+    Friend WithEvents txtGeneric As ComboBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents txtBrand As ComboBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label2 As Label
     Friend WithEvents txtQty As MetroFramework.Controls.MetroTextBox
     Friend WithEvents txtPrice As MetroFramework.Controls.MetroTextBox
     Friend WithEvents lblIDForm As Label
@@ -561,10 +568,5 @@ Partial Class FormProductUpdate
     Friend WithEvents btnRevert As Guna.UI.WinForms.GunaAdvenceButton
     Friend WithEvents btnUpdateProduct As Guna.UI.WinForms.GunaAdvenceButton
     Friend WithEvents txtReorder As MetroFramework.Controls.MetroTextBox
-    Friend WithEvents txtFormulation As MetroFramework.Controls.MetroTextBox
-    Friend WithEvents txtType As MetroFramework.Controls.MetroTextBox
-    Friend WithEvents txtClassification As MetroFramework.Controls.MetroTextBox
-    Friend WithEvents txtGeneric As MetroFramework.Controls.MetroTextBox
     Friend WithEvents txtBarcode As MetroFramework.Controls.MetroTextBox
-    Friend WithEvents txtBrand As MetroFramework.Controls.MetroTextBox
 End Class
