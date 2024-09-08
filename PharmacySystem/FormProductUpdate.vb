@@ -18,6 +18,7 @@ Public Class FormProductUpdate
 
     Private Sub FormProductUpdate_Shown(sender As Object, e As EventArgs) Handles MyBase.Shown
         txtBarcode.Focus()
+
     End Sub
 
 
@@ -238,4 +239,49 @@ Public Class FormProductUpdate
         txtPrice.Text = price
         txtBarcode.Focus()
     End Sub
+
+    Private Sub txtReorder_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtReorder.KeyPress
+        If Not Char.IsControl(e.KeyChar) AndAlso Not Char.IsDigit(e.KeyChar) Then
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub txtQty_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtQty.KeyPress
+        If Not Char.IsControl(e.KeyChar) AndAlso Not Char.IsDigit(e.KeyChar) Then
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub txtPrice_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtPrice.KeyPress
+        If Not Char.IsControl(e.KeyChar) AndAlso Not Char.IsDigit(e.KeyChar) Then
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub txtPrice_TextChanged(sender As Object, e As EventArgs) Handles txtPrice.TextChanged
+        Dim cursorPosition As Integer = txtPrice.SelectionStart
+
+        ' Remove commas and whitespace
+        Dim priceText As String = txtPrice.Text.Replace(",", "").Trim()
+
+        ' Check if the text can be parsed as a decimal
+        Dim price As Decimal
+        If Decimal.TryParse(priceText, price) Then
+            ' Format the price with a comma separator for thousands
+            Dim formattedPrice As String = price.ToString("#,##0.00")
+
+            ' Update the textbox text
+            RemoveHandler txtPrice.TextChanged, AddressOf txtPrice_TextChanged
+            txtPrice.Text = formattedPrice
+            AddHandler txtPrice.TextChanged, AddressOf txtPrice_TextChanged
+
+            ' Restore the cursor position after formatting
+            txtPrice.SelectionStart = Math.Min(cursorPosition, txtPrice.Text.Length)
+        Else
+            ' If the parsing fails, set the text to "0.00" and place the cursor at the end
+            txtPrice.Text = "0.00"
+            txtPrice.SelectionStart = txtPrice.Text.Length
+        End If
+    End Sub
+
 End Class
